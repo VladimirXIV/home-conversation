@@ -1,0 +1,11 @@
+server:
+    port: 8091
+
+spring:
+
+    mandatory-file-encoding: UTF-8
+
+    datasource:
+        username: srv_users_role
+        password: srv_users_role
+        jdbc-url: jdbc:postgresql://localhost:5432/localdb

@@ -1,0 +1,453 @@
+html, body {
+    margin: 0;
+    height: 100%;
+
+    background-color: #74949F;
+}
+
+.root {
+    height: calc(100% - 4px);
+    margin: 2px;
+}
+
+.header {
+    height: calc(5% - 2px);
+    width: 100%;
+
+    margin-bottom: 2px;
+
+    background-color: #3B3E47;
+    border-radius: 3px;
+}
+
+#main-content {
+    height: 90%;
+    display: flex;
+}
+
+#contacts-area {
+    width: 20%;
+
+    background-color: #3B3E47;
+    border-radius: 3px;
+}
+
+#contacts-search-add {
+    display: flex;
+}
+
+.search-input {
+    width: 100%;
+    height: 26px;
+
+    margin: 5px 7px 5px 7px;
+    padding: 0 30px 0 10px;
+    border: 0;
+
+    background-color: #f0f1f4;
+
+    background-image: url("../img/rsz_search.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    border-radius: 3px;
+}
+
+#search-result {
+
+    position: relative;
+
+    left: 10px;
+
+
+
+    background-color: #fafafa;
+    border: solid 3px #9e70ba;
+
+    border-radius: 5px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.contacts-search-icon {
+    margin: 5px 7px 5px 0;
+    padding: 0;
+    border: 0;
+
+    width: 25px;
+    height: 25px;
+
+    background-color: #f0f1f4;
+
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.contacts-add-btn {
+    margin: 5px 7px 5px 5px;
+
+    min-width: 25px;
+    height: 25px;
+
+    background-color: #8AC3C7;
+
+    border-radius: 3px;
+}
+
+.add-btn {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    min-width: 25px;
+    height: 25px;
+
+
+    background: url("../img/cross-icon-white.png") no-repeat;
+    background-size: 25px 25px;
+
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+
+#btn-search {
+    width: calc(20% - 9px);
+
+    margin: 5px 7px 5px 0;
+    border: 1px solid #f0f1f4;
+    padding: 0;
+
+    border-radius: 3px;
+}
+
+#contacts-list {
+    height: calc(100% - 35px);
+    overflow: auto;
+}
+
+.list-row {
+    height: 50px;
+
+    margin: 1px 10px 1px 1px;
+    display: flex;
+}
+
+.list-row:hover {
+    background: #464a53;
+    cursor: pointer;
+}
+
+.contact-image {
+    height: 44px;
+    width: 44px;
+
+    margin: 3px 3px 3px 7px ;
+
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+.contact-info {
+    min-width: calc(100% - 119px);
+
+    margin: 3px 3px 3px 0;
+    padding: 5px 10px;
+
+    color: white;
+}
+
+.contact-status {
+    width: 10px;
+    height: 10px;
+
+    margin-right: 9px;
+
+    background-color: green;
+    border-radius: 50%;
+
+    align-self: center;
+}
+
+.remove-btn-wrapper {
+    width: 20px;
+    height: 20px;
+
+    margin-right: 3px;
+
+    border-radius: 5px;
+
+    align-self: center;
+}
+
+.remove-button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    min-width: 20px;
+    height: 20px;
+
+    background: url("../img/pngfind.com-cross-out-png-283944.png") no-repeat;
+    background-size: 20px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#conversations-area {
+    width: calc(15% - 2px);
+
+    margin-left: 2px;
+
+    background-color: #464D5D;
+    border-radius: 3px;
+}
+
+#conversation-search {
+    display: flex;
+}
+
+#conversation-list {
+    height: 96%;
+}
+
+.conversation-info {
+    min-width: calc(100% - 43px);
+
+    margin: 3px 3px 3px 0;
+    padding: 5px 10px;
+
+    color: white;
+}
+
+.contact-info {
+    min-width: calc(100% - 115px);
+
+    margin: 3px 3px 3px 0;
+    padding: 5px 10px;
+
+    color: white;
+}
+
+#conversation-list li {
+    list-style: none;
+    font-family: Lucida Connsole, monospace;
+
+    padding: 10px 10px;
+}
+
+#conversation-list li:hover {
+    background: #596073;
+    cursor: pointer;
+}
+
+#messaging-area {
+    width: calc(70% - 2px);
+
+    margin-left: 2px;
+
+    background-color: #F1F1F1;
+    border-radius: 3px;
+}
+
+#messaging-info-line {
+    height: calc(8% - 1px);
+
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    border-bottom: 1px solid #474D5D;
+}
+
+#messaging-wrapper {
+    height: 92%;
+
+    display: flex;
+}
+
+#messaging-contact-info {
+    width: calc(21% - 1px);
+
+    border-right: 1px solid #474D5D;
+}
+
+
+#message-input-area {
+
+    background-color: #3B3E47;
+}
+
+#messaging-input-output-wrapper {
+    width: 79%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#output-area {
+    height: calc(75% - 1px);
+
+    border-bottom: 1px solid #474D5D;
+}
+
+#input-area {
+    height: calc(20% - 4px);
+    padding: 2px;
+}
+
+#button-area {
+    height: 5%;
+    /*background-color: gainsboro;*/
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#txt-area {
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+
+    resize: none;
+
+    border: 1px solid grey;
+    margin: 0;
+    padding: 0;
+
+    border-radius: 2px;
+}
+
+.btn {
+    background-color: #4fb3c9;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #30889c;
+}
+
+.btn-sending {
+    width: calc(10% - 4px);
+
+    margin: 0 2px 2px 2px
+}
+
+.submenu {
+    height: calc(90% - 2px);
+    width: calc(15% - 4px);
+
+    margin-left: 2px;
+    margin-right: 2px;
+
+    float: left;
+
+    background-color: #474D5D;
+    border-radius: 3px;
+}
+
+.text-area-wrapper {
+    height: calc(90% - 2px);
+    width: calc(75% - 2px);
+
+    overflow: hidden;
+
+    background-color: #F3F3F3;
+    border-radius: 3px;
+}
+
+.user-line {
+    height: 7%;
+    width: 100%;
+
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    background-color: #8AC3C7;
+}
+
+.chat-members {
+    height: 93%;
+    width: calc(20% - 1px);
+
+    float: left;
+
+    border-right: 1px solid #74949F;
+
+    -moz-border-radius-bottomleft: 3px;
+    background-color: #FFFFFF;
+}
+
+.chat-line {
+    height: calc(7% - 2px);
+    width: 80%;
+
+    overflow: hidden;
+
+    border-bottom: #74949F solid 2px;
+}
+
+.chat-area {
+    height: calc(65% - 1px);
+    width: 80%;
+
+    overflow: hidden;
+
+    border-bottom: #74949F solid 1px;
+}
+
+.message-area {
+    height: calc(16% - 1px);
+    width: 80%;
+
+    overflow: hidden;
+
+    border-bottom: #74949F solid 1px;
+}
+
+button-wrapper {
+    height: 5%;
+    width: 80%;
+
+    overflow: hidden;
+}
+
+.button {
+    background-color: #8AC3C7;
+
+    border: none;
+
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+
+    margin: 5px;
+}
+
+.btnSend {
+    float: right;
+}
+
+.btnAttach {
+    float: left;
+}
+
+.button:hover {
+    background-color: #6EC6DB; /* Green */
+    color: white;
+}
+
+.footer {
+    height: calc(5% - 2px);
+    width: 100%;
+
+    margin-top: 2px;
+
+    background-color: #3B3E47;
+    border-radius: 3px;
+}

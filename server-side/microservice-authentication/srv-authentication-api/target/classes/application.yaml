@@ -1,0 +1,13 @@
+server:
+    port: 8090
+
+spring:
+
+    mandatory-file-encoding: UTF-8
+
+    datasource:
+        username: srv_auth_role
+        password: srv_auth_role
+        jdbc-url: jdbc:postgresql://localhost:5432/localdb
+        driver-class-name: org.postgresql.Driver
+        platform: postgres
