@@ -46,29 +46,43 @@ html, body {
 
     background-color: #f0f1f4;
 
-    background-image: url("../img/rsz_search.png");
+    background-image: url("../img/25x25/search.png");
     background-repeat: no-repeat;
     background-position: right;
 
     border-radius: 3px;
 }
 
-#search-result {
-
-    position: relative;
-
-    left: 10px;
-
-
-
-    background-color: #fafafa;
-    border: solid 3px #9e70ba;
-
-    border-radius: 5px;
+#search-results {
+    max-height: calc(40% - 35px);
+    overflow: auto;
 }
 
-select::-ms-expand {
-    display: none;
+.add-btn-wrapper {
+    width: 20px;
+    height: 20px;
+
+    margin-right: 3px;
+
+    border-radius: 5px;
+
+    align-self: center;
+}
+
+.add-btn{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    min-width: 20px;
+    height: 20px;
+
+    background: url("../img/add-blue-cross.png") no-repeat;
+    background-size: 20px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
 }
 
 .contacts-search-icon {
@@ -96,22 +110,6 @@ select::-ms-expand {
     border-radius: 3px;
 }
 
-.add-btn {
-    margin: 0;
-    padding: 0;
-    border: 0;
-
-    min-width: 25px;
-    height: 25px;
-
-
-    background: url("../img/cross-icon-white.png") no-repeat;
-    background-size: 25px 25px;
-
-    border-radius: 3px;
-
-    cursor: pointer;
-}
 
 #btn-search {
     width: calc(20% - 9px);
@@ -124,7 +122,7 @@ select::-ms-expand {
 }
 
 #contacts-list {
-    height: calc(100% - 35px);
+    height: calc(60% - 35px);
     overflow: auto;
 }
 
@@ -151,7 +149,7 @@ select::-ms-expand {
 }
 
 .contact-info {
-    min-width: calc(100% - 119px);
+    width: calc(100% - 125px);
 
     margin: 3px 3px 3px 0;
     padding: 5px 10px;
@@ -190,7 +188,7 @@ select::-ms-expand {
     min-width: 20px;
     height: 20px;
 
-    background: url("../img/pngfind.com-cross-out-png-283944.png") no-repeat;
+    background: url("../img/25x25/remove.png") no-repeat;
     background-size: 20px 20px;
 
     border-radius: 5px;
@@ -225,7 +223,7 @@ select::-ms-expand {
 }
 
 .contact-info {
-    min-width: calc(100% - 115px);
+    min-width: calc(100% - 119px);
 
     margin: 3px 3px 3px 0;
     padding: 5px 10px;

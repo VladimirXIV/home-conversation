@@ -29,44 +29,50 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="9" />
-          <entry key="html" value="8" />
+          <entry key="css" value="11" />
+          <entry key="html" value="10" />
           <entry key="jpg" value="5" />
-          <entry key="png" value="23" />
+          <entry key="png" value="37" />
           <entry key="rnc" value="3" />
+          <entry key="svg" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="9" />
-          <entry key="HTML" value="8" />
-          <entry key="Image" value="28" />
+          <entry key="CSS" value="11" />
+          <entry key="HTML" value="10" />
+          <entry key="Image" value="42" />
           <entry key="RNG Compact" value="3" />
+          <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="3960" />
-          <entry key="html" value="1905" />
+          <entry key="css" value="4055" />
+          <entry key="html" value="2075" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="3960" />
-          <entry key="HTML" value="1905" />
+          <entry key="CSS" value="4055" />
+          <entry key="HTML" value="2075" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49312243">
+    <splitter split-orientation="horizontal" split-proportion="0.43589744">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/html/test.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="99">
-                  <caret line="38" selection-start-line="38" selection-end-line="38" />
+                <state relative-caret-position="229">
+                  <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+                  <folding>
+                    <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -74,12 +80,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/test.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="142" column="1" selection-start-line="142" selection-start-column="1" selection-end-line="142" selection-end-column="1" />
+                <state relative-caret-position="504">
+                  <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -108,8 +114,8 @@
       <list>
         <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/css/test.css" />
         <option value="$PROJECT_DIR$/html/test.html" />
+        <option value="$PROJECT_DIR$/css/test.css" />
       </list>
     </option>
   </component>
@@ -124,10 +130,10 @@
       <path value="$PROJECT_DIR$/overlay-scrollbar/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="30" />
-    <option name="width" value="580" />
-    <option name="height" value="677" />
+    <option name="width" value="570" />
+    <option name="height" value="680" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -155,6 +161,12 @@
               <item name="client-side" type="b2602c69:ProjectViewProjectNode" />
               <item name="client-side" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="client-side" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client-side" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="25x25" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="client-side" type="b2602c69:ProjectViewProjectNode" />
@@ -210,18 +222,18 @@
       <workItem from="1558284574905" duration="10175000" />
       <workItem from="1558529754027" duration="34607000" />
       <workItem from="1558776635268" duration="864000" />
-      <workItem from="1559065852900" duration="592000" />
+      <workItem from="1559065852900" duration="5504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111150000" />
+    <option name="totallyTimeSpent" value="116062000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1600" height="870" extended-state="7" />
+    <frame x="0" y="30" width="1600" height="870" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.077996194" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10970197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -279,31 +291,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/img/white-icon-add.png" />
     <entry file="file://$PROJECT_DIR$/img/plus-md.png" />
-    <entry file="file://$PROJECT_DIR$/img/add.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/add-icon.png" />
     <entry file="file://$PROJECT_DIR$/img/medical.jpg" />
-    <entry file="file://$PROJECT_DIR$/img/search.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/add-cross.png" />
     <entry file="file://$PROJECT_DIR$/img/white-icon-add-cropped.png" />
     <entry file="file://$PROJECT_DIR$/img/white-add-cross.png" />
     <entry file="file://$PROJECT_DIR$/img/cross-icon-white.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/add.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/cross-icon-png-20.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/cross-icon-png-54.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/cross-icon-png_323567.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/search.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/25x25/search.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/25x25/add-blue-cross.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/blue-plus-sign-hi.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/add-blue-cross.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="229">
+          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+          <folding>
+            <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/test.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="142" column="1" selection-start-line="142" selection-start-column="1" selection-end-line="142" selection-end-column="1" />
+        <state relative-caret-position="504">
+          <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
         </state>
       </provider>
     </entry>
