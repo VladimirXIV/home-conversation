@@ -55,7 +55,16 @@ html, body {
 
 #search-results {
     max-height: calc(40% - 35px);
+
     overflow: auto;
+}
+
+.search-results-caption {
+
+    padding: 5px 5px 5px 10px;
+    font-family: monaco,Consolas,Lucida Console,monospace;
+    font-size: 12px;
+    color: #F3F3F3;
 }
 
 .add-btn-wrapper {
@@ -122,7 +131,7 @@ html, body {
 }
 
 #contacts-list {
-    height: calc(60% - 35px);
+    max-height: calc(60% - 35px);
     overflow: auto;
 }
 

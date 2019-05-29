@@ -15,7 +15,7 @@
         <!--<script type="text/javascript" src="../overlay-scrollbar/js/jquery.overlayScrollbars.js"></script>-->
     </head>
 
-    <body onload>
+    <body >
 
         <div class="root">
 
@@ -27,27 +27,21 @@
 
                     <div id="contacts-search-add">
 
-                        <input class="search-input" type="text" placeholder="search" />
-
-                        <!--<img class="contacts-search-icon" src="../img/search.png"/>-->
-
-                        <!--<div class="contacts-add-btn">
-                            <button class="add-btn"></button>
-                        </div>-->
+                        <input class="search-input" type="text" placeholder="search / add" onkeydown="searchGlobalContacts()"/>
 
                     </div>
 
                     <div id="search-results">
 
-                        <div>
-                            Searched results
+                        <div class="search-results-caption">
+                            Global searched results
                         </div>
 
-                        <div class="list-row">
+                        <!--<div class="list-row">
 
                             <div class="contact-image"></div>
 
-                            <div class="contact-info">
+                            <div style="min-width: calc(100% - 100px)" class="contact-info">
                                 <div style="font-size:18px">Valdemarus</div>
                                 <div style="font-size:14px">Simple moto</div>
                             </div>
@@ -56,14 +50,14 @@
                                 <button class="add-btn"></button>
                             </div>
 
-                        </div>
+                        </div>-->
 
                     </div>
 
                     <div id="contacts-list">
 
-                        <div>
-                            
+                        <div class="search-results-caption">
+                            In your list
                         </div>
 
                         <div class="list-row">
