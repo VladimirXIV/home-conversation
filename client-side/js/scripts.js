@@ -1,34 +1,3 @@
-function createOrdertTableFromJSON(JSONArray) {
-
-    var divID = document.getElementById("main");
-
-    var fullTable = "<table>" +
-        "<th>" +
-        "<td>Department</td>" +
-        "</th>";
-
-    for (i in JSONArray) {
-        fullTable += "<tr>" +
-            "<td>" + JSONArray[i].name + "</td>" +
-            "</tr>";
-    }
-
-    fullTable += "</table>";
-
-    divID.innerHTML += fullTable;
-}
-
-function getAllOrders() {
-    $.ajax ({
-        type: "GET",
-        url: "http://localhost:9080/furniturefactory-1.0-SNAPSHOT/getAllDepartments",
-        datatype: "json",
-        success: function(data) {
-            createTableFromJSON(data)
-        }
-    })
-}
-
 function populateWithMembers() {
 
     var chatContacts = ['PetRUShka',
@@ -65,10 +34,9 @@ function getFilteredArray(namesWithMottos, strToSearch) {
 
     for (i in namesWithMottos) {
 
-        if (namesWithMottos.names.startsWith(strToSearch)) {
-            result.push(namesWithMottos[i]);
-        }
-
+       if (namesWithMottos[i].name.startsWith(strToSearch)) {
+           result.push(namesWithMottos[i]);
+       }
     }
 
     return result;
@@ -79,51 +47,77 @@ function searchGlobalContacts() {
     var namesWithMottos =
         [{
             "name": "Alexander",
-            "motto": 25
+            "motto": "Fire!"
         }, {
             "name": "Anthony",
-            "motto": 25
+            "motto": "Hey now!"
         }, {
-            "name": "Jay",
-            "motto": 25
+            "name": "Andrew",
+            "motto": "Live!"
         }, {
-            "name": "Jay",
-            "motto": 25
+            "name": "Aaron",
+            "motto": "GD"
         }, {
-            "name": "Jay",
-            "motto": 25
+            "name": "Asher",
+            "motto": "ich bin da"
         }, {
-            "name": "Jay",
-            "motto": 25
+            "name": "Austin",
+            "motto": "kasabian"
         }, {
-            "name": "Jay",
-            "motto": 25
+            "name": "Grayson",
+            "motto": "milk shaker"
         }, {
-            "name": "Jay",
-            "motto": 25
+            "name": "Gavin",
+            "motto": "bronson"
         }, {
-            "name": "Jay",
-            "motto": 25
-        }]
+            "name": "Greyson",
+            "motto": "rhcp fan"
+        }, {
+            "name": "George",
+            "motto": "jhony the first"
+        }, {
+            "name": "Giovanni",
+            "motto": "L&M smoker"
+        }, {
+            "name": "Grant",
+            "motto": "software prog"
+        }];
 
+    var strToSearch = document.getElementById("srch-ipt").value;
 
-        {
-        "names": ["Alexander", "Anthony", "Andrew", "Aaron", "Asher", "Austin", "Grayson", "Gavin", "Greyson", "George", "Giovanni", "Grant"],
-        "mottos": ["Fire!", "Hey now!", "Live!", "GD", "ich bin da", "kasabian", "milk shaker", "bronson", "rhcp fan", "jhony the first", "L&M smoker", "software prog"]
+    console.log("strToSearch = " + strToSearch );
+
+    if (!strToSearch) {
+
+        document.getElementById("search-results").style.display = "none";
+
+        var myNode = document.getElementById("search-results");
+
+        while (myNode.firstElementChild.nextElementSibling) {
+            myNode.removeChild(myNode.firstElementChild.nextElementSibling);
+        }
+
+        return;
+
     }
 
     if (namesWithMottos.length !== 0) {
 
         document.getElementById("search-results").style.display = "block";
 
-        for (i in contactsName) {
+        var filteredNamesWithMottos = getFilteredArray(namesWithMottos, strToSearch);
 
-            var divListRow = createListRowForSearchResults(contactsName[i], contactsMotos[i]);
+        console.log("filteredNamesWithMottos.length = " + filteredNamesWithMottos.length);
+
+        for (i in filteredNamesWithMottos) {
+
+            console.log("i = " + i);
+
+            var divListRow = createListRowForSearchResults(filteredNamesWithMottos[i].name, filteredNamesWithMottos[i].motto);
 
             document.getElementById("search-results").appendChild(divListRow);
         }
     }
-
 }
 
 function createListRowForSearchResults(name, moto) {
@@ -133,6 +127,7 @@ function createListRowForSearchResults(name, moto) {
 
     var divContactImage = document.createElement('div');
     divContactImage.className = "contact-image";
+
 
     var divSearchCI = document.createElement('div');
     divSearchCI.style.minWidth = "calc(100% - 100px)";
