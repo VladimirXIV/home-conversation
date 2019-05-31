@@ -1,30 +1,49 @@
-function populateWithMembers() {
+function populateListWithTestData() {
 
-    var chatContacts = ['PetRUShka',
-                       'Donald Cobain',
-                        '[xxx]Zl0[xxx]',
-                       'PoMario',
-                       'KuCeJIeB',
-                       'JIaJIo4Ka',
-                       'Donald Cobain',
-                       '[xxx]Zl0[xxx]',
-                       'PoMario',
-                       'KuCeJIeB',
-                       'JIaJIo4Ka'];
+    var namesWithMottos =
+        [{
+            "name": "Konstantine",
+            "motto": "the greate frontend!"
+        }, {
+            "name": "VladimiRUS",
+            "motto": "hating IT person"
+        }, {
+            "name": "Pavlo",
+            "motto": "american idiot"
+        }, {
+            "name": "Boris",
+            "motto": "berserk with axe"
+        }, {
+            "name": "Andrew",
+            "motto": "underdog"
+        }, {
+            "name": "Eugen",
+            "motto": "husband, police officer"
+        }, {
+            "name": "Vladi",
+            "motto": "undefined person"
+        }, {
+            "name": "Petr Eugenievich",
+            "motto": "math genius"
+        }, {
+            "name": "Grigory",
+            "motto": "master of pupets"
+        }, {
+            "name": "Oleg",
+            "motto": "just kopron!"
+        }, {
+            "name": "Angelina nagina",
+            "motto": "lloks like Angelina Jolie"
+        }, {
+            "name": "Nicolashka",
+            "motto": "it-scum"
+        }];
 
-    var contactList = document.getElementById("contact-list");
+    var strToSearch = document.getElementById("contacts-list");
 
-
-    for (i in chatContacts) {
-
-        var itemLi = document.createElement('li');
-        var itemA = document.createElement('a')
-        itemA.href = "#";
-
-        itemLi.innerHTML = chatContacts[i];
-        itemA.appendChild(itemLi);
-
-        contactList.appendChild(itemA);
+    for (i in namesWithMottos) {
+        var divListRow = createRowForContactList(namesWithMottos[i].name, namesWithMottos[i].motto);
+        document.getElementById("contacts-list").appendChild(divListRow);
     }
 }
 
@@ -34,7 +53,7 @@ function getFilteredArray(namesWithMottos, strToSearch) {
 
     for (i in namesWithMottos) {
 
-       if (namesWithMottos[i].name.startsWith(strToSearch)) {
+       if (namesWithMottos[i].name.toLowerCase().startsWith(strToSearch.toLowerCase())) {
            result.push(namesWithMottos[i]);
        }
     }
@@ -88,36 +107,90 @@ function searchGlobalContacts() {
     console.log("strToSearch = " + strToSearch );
 
     if (!strToSearch) {
-
-        document.getElementById("search-results").style.display = "none";
-
-        var myNode = document.getElementById("search-results");
-
-        while (myNode.firstElementChild.nextElementSibling) {
-            myNode.removeChild(myNode.firstElementChild.nextElementSibling);
-        }
-
+        clearSearchResults();
+        document.getElementById("srch-my-list").style.display = "none";
         return;
-
     }
 
     if (namesWithMottos.length !== 0) {
 
-        document.getElementById("search-results").style.display = "block";
-
         var filteredNamesWithMottos = getFilteredArray(namesWithMottos, strToSearch);
 
-        console.log("filteredNamesWithMottos.length = " + filteredNamesWithMottos.length);
+        clearSearchResults();
 
-        for (i in filteredNamesWithMottos) {
+        if (filteredNamesWithMottos && filteredNamesWithMottos.length) {
 
-            console.log("i = " + i);
+            document.getElementById("search-results").style.display = "block";
 
-            var divListRow = createListRowForSearchResults(filteredNamesWithMottos[i].name, filteredNamesWithMottos[i].motto);
+            document.getElementById("srch-my-list").style.display = "block";
 
-            document.getElementById("search-results").appendChild(divListRow);
+            console.log("filteredNamesWithMottos.length = " + filteredNamesWithMottos.length);
+
+            for (i in filteredNamesWithMottos) {
+
+                console.log("i = " + i);
+
+                var divListRow = createListRowForSearchResults(filteredNamesWithMottos[i].name, filteredNamesWithMottos[i].motto);
+
+                document.getElementById("search-results").appendChild(divListRow);
+            }
         }
+
     }
+}
+
+function clearSearchResults() {
+    document.getElementById("search-results").style.display = "none";
+
+    var myNode = document.getElementById("search-results");
+
+    while (myNode.firstElementChild.nextElementSibling) {
+        myNode.removeChild(myNode.firstElementChild.nextElementSibling);
+    }
+}
+
+function createRowForContactList(name, moto) {
+
+    var divListRow = document.createElement('div');
+    divListRow.className = "list-row";
+
+    var divContactImage = document.createElement('div');
+    divContactImage.className = "contact-image";
+
+    var divSearchCI = document.createElement('div');
+    divSearchCI.className = "contact-info";
+
+    var divName = document.createElement('div');
+    divName.style.fontSize = "18px";
+    divName.innerHTML = name;
+
+    var divMoto = document.createElement('div');
+    divMoto.style.fontSize = "14px";
+    divMoto.innerHTML = moto;
+
+    var divContactStatus = document.createElement('div');
+    divContactStatus.className = "contact-status";
+
+    var divRemoveBtnWrapper = document.createElement('div');
+    divRemoveBtnWrapper.className = "remove-btn-wrapper";
+
+    var buttonRemoveBtn = document.createElement('button');
+    buttonRemoveBtn.className = "remove-button";
+
+    divListRow.appendChild(divContactImage);
+
+    divSearchCI.appendChild(divName);
+    divSearchCI.appendChild(divMoto);
+
+    divListRow.appendChild(divSearchCI);
+
+    divListRow.appendChild(divContactStatus);
+
+    divRemoveBtnWrapper.appendChild(buttonRemoveBtn);
+    divListRow.appendChild(divRemoveBtnWrapper);
+
+    return divListRow;
+
 }
 
 function createListRowForSearchResults(name, moto) {
@@ -127,7 +200,6 @@ function createListRowForSearchResults(name, moto) {
 
     var divContactImage = document.createElement('div');
     divContactImage.className = "contact-image";
-
 
     var divSearchCI = document.createElement('div');
     divSearchCI.style.minWidth = "calc(100% - 100px)";
@@ -172,5 +244,3 @@ function createListRowForSearchResults(name, moto) {
         className: "os-theme-light"
     });
 });*/
-
-
