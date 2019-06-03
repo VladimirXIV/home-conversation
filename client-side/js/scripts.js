@@ -1,4 +1,4 @@
-function populateListWithTestData() {
+function populateContactListWithTestData() {
 
     var namesWithMottos =
         [{
@@ -39,11 +39,22 @@ function populateListWithTestData() {
             "motto": "it-scum"
         }];
 
-    var strToSearch = document.getElementById("contacts-list");
+    var chatNames =
+        [{
+            "name": "Konstantine"
+        }, {
+            "name": "VladimiRUS"
+        }];
+
 
     for (i in namesWithMottos) {
         var divListRow = createRowForContactList(namesWithMottos[i].name, namesWithMottos[i].motto);
         document.getElementById("contacts-list").appendChild(divListRow);
+    }
+
+    for (i in chatNames) {
+        var divChatNames = createListRowForConversationList(chatNames[i].name);
+        document.getElementById("conversation-list").appendChild(divChatNames);
     }
 }
 
@@ -153,6 +164,7 @@ function createRowForContactList(name, moto) {
 
     var divListRow = document.createElement('div');
     divListRow.className = "list-row";
+    divListRow.addEventListener("click", contactOnClick);
 
     var divContactImage = document.createElement('div');
     divContactImage.className = "contact-image";
@@ -176,6 +188,7 @@ function createRowForContactList(name, moto) {
 
     var buttonRemoveBtn = document.createElement('button');
     buttonRemoveBtn.className = "remove-button";
+    buttonRemoveBtn.addEventListener("click", deleteContact);
 
     divListRow.appendChild(divContactImage);
 
@@ -232,6 +245,56 @@ function createListRowForSearchResults(name, moto) {
     return divListRow;
 }
 
+function createListRowForConversationList(name) {
+    var divListRow = document.createElement('div');
+    divListRow.className = "list-row";
+
+    var divCI = document.createElement('div');
+    divCI.className = "conversation-info";
+
+    var divConversationName = document.createElement('div');
+    divConversationName.innerHTML = "chat with " + name;
+
+    var divAddBtnWrapper = document.createElement('div');
+    divAddBtnWrapper.className = "remove-btn-wrapper";
+
+    var buttonAddBtn = document.createElement('button');
+    buttonAddBtn.className = "remove-button";
+
+    divCI.appendChild(divConversationName);
+
+    divListRow.appendChild(divCI);
+
+    divAddBtnWrapper.appendChild(buttonAddBtn);
+    divListRow.appendChild(divAddBtnWrapper);
+
+    return divListRow;
+}
+
+
+function deleteContact(e) {
+    e.stopPropagation();
+    console.log("deleteContact !");
+}
+
+function contactOnClick(e) {
+
+    var contactInfo = this.getElementsByClassName("contact-info")[0];
+    var contactName = contactInfo.firstElementChild.innerHTML;
+
+    createConversation(contactName);
+    
+    console.log("contactOnClick = " + contactName);
+}
+
+function conversationOnClick() {
+    console.log("conversationOnClick");
+}
+
+function createConversation(name) {
+    var divChatNames = createListRowForConversationList(name);
+    document.getElementById("conversation-list").appendChild(divChatNames);
+}
 
 /*$(function() {
 
