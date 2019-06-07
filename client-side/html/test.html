@@ -17,7 +17,29 @@
 
     <body onload="populateContactListWithTestData()">
 
-        <div class="root">
+    <!-- The Modal -->
+
+        <div id="contact-list-modal">
+
+            <div id="contact-list-content">
+
+               <div id="search-area">
+                   <input id="srch" class="search-input" type="text" placeholder="search / add" oninput="searchGlobalContacts()"/>
+               </div>
+
+                <div id="contact-list-search">
+                </div>
+
+                <div id="contact-list-list">
+                </div>
+
+            </div>
+
+        </div>
+
+
+    <div class="root">
+
 
             <div class="header"></div>
 
@@ -87,6 +109,11 @@
 
                         <input class="search-input" type="text" placeholder="search" />
 
+                        <div class="create-new-conversation-wrapper">
+                            <button class="create-new-conversation" onclick="createNewConversationOnClick()"></button>
+                        </div>
+
+
                     </div>
 
                     <div id="conversation-list">
@@ -94,7 +121,7 @@
                         <div class="list-row" onclick="conversationOnClick()">
 
                             <div class="conversation-info">
-                                <div style="font-size:18px">Chat with Nicolo</div>
+                                <div>chat with Nicolo</div>
                             </div>
 
                             <div class="remove-btn-wrapper">

@@ -271,7 +271,6 @@ function createListRowForConversationList(name) {
     return divListRow;
 }
 
-
 function deleteContact(e) {
     e.stopPropagation();
     console.log("deleteContact !");
@@ -283,8 +282,13 @@ function contactOnClick(e) {
     var contactName = contactInfo.firstElementChild.innerHTML;
 
     createConversation(contactName);
-    
+
     console.log("contactOnClick = " + contactName);
+}
+
+function createNewConversationOnClick() {
+    var modal = document.getElementById("contact-list-modal");
+    modal.style.display = "block";
 }
 
 function conversationOnClick() {
