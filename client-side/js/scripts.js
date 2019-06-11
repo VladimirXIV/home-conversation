@@ -250,6 +250,7 @@ function createListRowForConversationList(name) {
     divListRow.className = "list-row";
 
     var divCI = document.createElement('div');
+    divCI.style.minWidth = "calc(100% - 46px)";
     divCI.className = "conversation-info";
 
     var divConversationName = document.createElement('div');
