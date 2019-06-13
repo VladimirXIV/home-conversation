@@ -117,6 +117,29 @@ html, body {
     cursor: pointer;
 }
 
+.check-box-wrapper {
+    width: 25px;
+    height: 25px;
+
+    margin-right: 3px;
+
+    border-radius: 5px;
+
+    align-self: center;
+}
+
+.check-box-wrapper:hover {
+    background-color: #ccc;
+}
+
+.check-box-contact {
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+
+    cursor: pointer;
+}
+
 .contacts-search-icon {
     margin: 5px 7px 5px 0;
     padding: 0;
@@ -485,9 +508,6 @@ button-wrapper {
 }
 
 #contact-list-modal {
-
-    display: none;
-
     position: fixed;
 
     left: 0;
