@@ -198,6 +198,7 @@ input[type="checkbox"]:checked + div {
     height: 50px;
 
     margin: 1px 10px 1px 1px;
+
     display: flex;
 }
 
@@ -206,12 +207,52 @@ input[type="checkbox"]:checked + div {
     cursor: pointer;
 }
 
+.lbl-choose-contact{
+    align-self: center;
+
+
+    width: calc(100% - 91px);
+}
+
+.lbl-choose-contact:after {
+
+    display: inline-block;
+    vertical-align: middle;
+
+    content: '';
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url(../img/check_box_off.svg) ;
+
+    border-radius: 5px;
+
+    margin-right: 7px;
+
+    background-color: antiquewhite;
+}
+
+input[type="checkbox"]:checked  .lbl-choose-contact:after {
+    background-image: url(../img/check_box_on.svg) ;
+}
+
+.place_filler {
+    display: inline-block;
+    width: 80%;
+}
+
+.checkbox-cont {
+    display: none;
+}
+
 #conversation-list .list-row:hover {
     background: darkseagreen;
     cursor: pointer;
 }
 
 .contact-image {
+
     height: 44px;
     width: 44px;
 
