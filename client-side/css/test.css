@@ -221,20 +221,25 @@ input[type="checkbox"]:checked + div {
 
     content: '';
 
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 
-    background-image: url(../img/check_box_off.svg) ;
 
-    border-radius: 5px;
+    border: 2px solid #30889c;
 
     margin-right: 7px;
 
-    background-color: antiquewhite;
+    border-radius: 5px;
+
+
+    background-color: #f0f1f4;
 }
 
-input[type="checkbox"]:checked  .lbl-choose-contact:after {
-    background-image: url(../img/check_box_on.svg) ;
+input[type="checkbox"]:checked  + .lbl-choose-contact:after {
+    background: url(../img/transparent-check-arrow.png) no-repeat;
+    background-position: center;
+    background-color: #f0f1f4;
+    background-size: 22px 22px;
 }
 
 .place_filler {
