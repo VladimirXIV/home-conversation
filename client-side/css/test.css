@@ -208,10 +208,13 @@ input[type="checkbox"]:checked + div {
 }
 
 .lbl-choose-contact{
-    align-self: center;
+    width: calc(100% - 54px);
+    height: 100%;
 
+    margin-left: 5px;
 
-    width: calc(100% - 91px);
+    display: flex;
+    align-items: center;
 }
 
 .lbl-choose-contact:after {
@@ -221,13 +224,11 @@ input[type="checkbox"]:checked + div {
 
     content: '';
 
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
 
 
     border: 2px solid #30889c;
-
-    margin-right: 7px;
 
     border-radius: 5px;
 
@@ -239,12 +240,14 @@ input[type="checkbox"]:checked  + .lbl-choose-contact:after {
     background: url(../img/transparent-check-arrow.png) no-repeat;
     background-position: center;
     background-color: #f0f1f4;
-    background-size: 22px 22px;
+    background-size: 16px 16px;
 }
 
 .place_filler {
+    width: calc(100% - 26px);
     display: inline-block;
-    width: 80%;
+
+    vertical-align: middle;
 }
 
 .checkbox-cont {
@@ -523,11 +526,31 @@ input[type="checkbox"]:checked  + .lbl-choose-contact:after {
     border-bottom: #74949F solid 1px;
 }
 
-button-wrapper {
+.button-wrapper {
     height: 5%;
     width: 80%;
 
     overflow: hidden;
+}
+
+#contact-list-search {
+    max-height: calc(94% - 36px);
+    overflow: auto;
+}
+
+.modal-wnd-btn {
+    height: calc(6% - 5px);
+
+    margin-top: 5px;
+    padding: 0 7px;
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-btn-sending {
+    width: 20%;
 }
 
 .button {
