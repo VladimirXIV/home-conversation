@@ -590,6 +590,8 @@ input[type="checkbox"]:checked  + .lbl-choose-contact:after {
 }
 
 #contact-list-modal {
+    display: none;
+
     position: fixed;
 
     left: 0;
@@ -602,7 +604,6 @@ input[type="checkbox"]:checked  + .lbl-choose-contact:after {
 }
 
 #contact-list-content {
-
     position: absolute;
 
     top: 50%;

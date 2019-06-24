@@ -292,6 +292,11 @@ function createNewConversationOnClick() {
     modal.style.display = "block";
 }
 
+function cancelNewConversation() {
+    var modal = document.getElementById("contact-list-modal");
+    modal.style.display = "none";
+}
+
 function conversationOnClick() {
     console.log("conversationOnClick");
 }
