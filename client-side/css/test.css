@@ -534,14 +534,14 @@ input[type="checkbox"]:checked  + .lbl-choose-contact:after {
 }
 
 #contact-list-search {
-    max-height: calc(94% - 36px);
+    max-height: calc((100% - 36px) * 0.94);
     overflow: auto;
 }
 
 .modal-wnd-btn {
-    height: calc(6% - 5px);
+    height: calc((100% - 36px) * 0.06 - 10px);
 
-    margin-top: 5px;
+    margin: 5px 0;
     padding: 0 7px;
 
 
