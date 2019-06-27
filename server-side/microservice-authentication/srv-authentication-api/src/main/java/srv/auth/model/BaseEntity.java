@@ -31,7 +31,7 @@ public class BaseEntity {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "accountGen")
-    @SequenceGenerator(name = "accountGen", schema = "srv_auth", sequenceName = "accounts_seq", allocationSize = 1)
+    @SequenceGenerator(name = "accountGen", schema = "srv_auth", sequenceName = "authentication_seq", allocationSize = 1)
     private Long id;
 
     @CreatedDate
@@ -43,6 +43,6 @@ public class BaseEntity {
     private Date updated;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "status")
+    @Column(name = "state")
     private State state;
 }

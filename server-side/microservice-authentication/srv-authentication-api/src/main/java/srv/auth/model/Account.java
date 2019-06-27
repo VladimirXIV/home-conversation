@@ -10,19 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import srv.auth.annotation.ValueInc;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -48,11 +36,9 @@ public class Account {
     @ValueInc(startvalue = 900)
     private Long userId;
 
-    @Column(name = "state")
-    @Enumerated(value = EnumType.STRING)
-    private State state = State.ACTIVE;
-
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "user_roles", joinColumns = {}
+    @JoinTable(name = "account_roles", schema = "srv_auth",
+               joinColumns = {@JoinColumn(name = "account_id", referencedColumnName = "id")},
+               inverseJoinColumns = {@JoinColumn(name = "role_id", referencedColumnName = "id")})
     private List<Role> roles;
 }
