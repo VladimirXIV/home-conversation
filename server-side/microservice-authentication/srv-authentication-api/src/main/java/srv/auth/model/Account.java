@@ -14,11 +14,16 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import java.util.List;
 
 /**
  * Account.
@@ -33,12 +38,6 @@ import javax.persistence.Table;
 @Table(name = "account", schema = "srv_auth")
 public class Account {
 
-    @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "accountGen")
-    @SequenceGenerator(name = "accountGen", schema = "srv_auth", sequenceName = "accounts_seq", allocationSize = 1)
-    private Long id;
-
     @Column(name = "login")
     private String login;
 
@@ -52,4 +51,8 @@ public class Account {
     @Column(name = "state")
     @Enumerated(value = EnumType.STRING)
     private State state = State.ACTIVE;
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "user_roles", joinColumns = {}
+    private List<Role> roles;
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/authentication.iml" filepath="$PROJECT_DIR$/authentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/srv-authentication-api/srv-authentication-api.iml" filepath="$PROJECT_DIR$/srv-authentication-api/srv-authentication-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/srv-authentication-liquibase/srv-authentication-liquibase.iml" filepath="$PROJECT_DIR$/srv-authentication-liquibase/srv-authentication-liquibase.iml" />
+    </modules>
+  </component>
+</project>
