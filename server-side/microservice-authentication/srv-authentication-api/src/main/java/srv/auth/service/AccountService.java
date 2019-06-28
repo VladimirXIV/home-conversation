@@ -5,16 +5,24 @@
 
 package srv.auth.service;
 
-import org.springframework.stereotype.Service;
 import srv.auth.model.Account;
+
+import java.util.List;
 
 /**
  * AccountService.
  *
  * @author waldemar
  */
-public interface AccountService {
+public interface AccountService  {
 
-    Account createNewAccount(Account account);
+    Account register(Account account);
 
+    List<Account> getAll();
+
+    Account findByLogin(String login);
+
+    Account findById(Long id);
+
+    void delete(Long id);
 }

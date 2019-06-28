@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import srv.auth.dto.AccountDto;
 import srv.auth.model.Account;
-import srv.auth.service.AccountService;
 
 /**
  * SignUp.

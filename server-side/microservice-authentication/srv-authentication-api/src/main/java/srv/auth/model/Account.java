@@ -24,7 +24,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Entity
 @Table(name = "account", schema = "srv_auth")
-public class Account {
+public class Account extends BaseEntity {
 
     @Column(name = "login")
     private String login;
