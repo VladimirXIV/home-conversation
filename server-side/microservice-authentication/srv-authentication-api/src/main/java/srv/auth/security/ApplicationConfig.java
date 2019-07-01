@@ -25,7 +25,7 @@ import java.util.Map;
 @Configuration
 public class ApplicationConfig {
 
-    public ProducerFactory<String, Long> producerFactory() {
+   /* public ProducerFactory<String, Long> producerFactory() {
 
         Map<String, Object> config = new HashMap<>();
 
@@ -34,11 +34,11 @@ public class ApplicationConfig {
         config.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
 
         return new DefaultKafkaProducerFactory<>(config);
-    }
+    }*/
 
 
-    @Bean(name = "kafkaTemplate")
+    /*@Bean(name = "kafkaTemplate")
     public KafkaTemplate<String, Long> kafkaTemplate() {
         return new KafkaTemplate<>(producerFactory());
-    }
+    }*/
 }

@@ -6,7 +6,6 @@
 package srv.auth.service;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import srv.auth.model.Account;
@@ -23,8 +22,8 @@ import java.util.List;
  *
  * @author waldemar
  */
-@Service
 @Slf4j
+@Service(value = "accountService")
 public class AccountServiceImpl implements AccountService {
 
     private AccountRepository accountRepository;

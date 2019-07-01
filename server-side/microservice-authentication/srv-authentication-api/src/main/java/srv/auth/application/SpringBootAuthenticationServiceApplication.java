@@ -15,9 +15,11 @@ import org.springframework.context.annotation.ComponentScan;
  * @author waldemar
  */
 @ComponentScan(basePackages = {"srv.auth.security",
+                               "srv.auth.security.jwt",
                                "srv.auth.controller",
                                "srv.auth.service",
-                               "srv.auth.dao" })
+                               "srv.auth.repository"
+                                })
 @SpringBootApplication
 public class SpringBootAuthenticationServiceApplication {
 

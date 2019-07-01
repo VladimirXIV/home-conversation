@@ -7,13 +7,22 @@ package srv.auth.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import srv.auth.dto.AccountDto;
+import srv.auth.dto.AuthenticationAccountDto;
 import srv.auth.model.Account;
+import srv.auth.security.jwt.JwtTokenProvider;
+import srv.auth.service.AccountService;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * SignUp.
@@ -22,34 +31,44 @@ import srv.auth.model.Account;
  */
 
 @RestController
-@RequestMapping("/authentication")
+@RequestMapping("/api/v1/auth/")
 public class AuthenticationController {
 
-    private AccountService accountService;
-
-    private KafkaTemplate<String, Long> kafkaTemplate;
-
-    private static final String TOPIC = "hellokafka";
+    private AuthenticationManager authenticationManager;
+    private JwtTokenProvider jwtTokenProvider;
+    private final AccountService accountService;
 
     @Autowired
     public AuthenticationController(@Qualifier(value = "accountService") AccountService accountService,
-                                    @Qualifier(value = "kafkaTemplate") KafkaTemplate<String, Long> kafkaTemplate) {
+                                    @Qualifier(value = "jwtTokenProvider") JwtTokenProvider jwtTokenProvider,
+                                    @Qualifier(value = "authenticationManager") AuthenticationManager authenticationManager) {
         this.accountService = accountService;
-        this.kafkaTemplate = kafkaTemplate;
+        this.jwtTokenProvider = jwtTokenProvider;
+        this.authenticationManager = authenticationManager;
     }
 
-    @PostMapping(value = "/signIn")
-    public String signIn(@RequestBody AccountDto accountDto) {
-        return "login: " + accountDto.getName() + " password: " + accountDto.getPassword();
-    }
+   public ResponseEntity login(@RequestBody AuthenticationAccountDto requestAccountDto) {
+        try {
 
-    @PostMapping(value = "/signUp")
-    public Long signUp(@RequestBody AccountDto accountDto) {
+            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(requestAccountDto.getName(), requestAccountDto.getPassword()));
 
-        long id = accountService.createNewAccount(new Account(accountDto.getName(), accountDto.getPassword())).getId();
+            Account account = accountService.findByLogin(requestAccountDto.getName());
 
-        kafkaTemplate.send(TOPIC, id);
+            if (account == null) {
+                throw new UsernameNotFoundException("Account with username: " + requestAccountDto.getName() + " not found");
+            }
 
-        return id;
-    }
+            String token = jwtTokenProvider.createToken(requestAccountDto.getName(), account.getRoles());
+
+            Map<Object, Object>  response = new HashMap<>();
+            response.put("username", requestAccountDto.getName());
+            response.put("token", token);
+
+            return ResponseEntity.ok(response);
+
+        } catch (AuthenticationException e) {
+            throw new BadCredentialsException("Invalid usermane or password");
+        }
+
+   }
 }
