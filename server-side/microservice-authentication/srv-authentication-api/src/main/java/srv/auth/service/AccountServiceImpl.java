@@ -6,6 +6,8 @@
 package srv.auth.service;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import srv.auth.model.Account;
@@ -30,7 +32,10 @@ public class AccountServiceImpl implements AccountService {
     private RoleRepository roleRepository;
     private BCryptPasswordEncoder passwordEncoder;
 
-    public AccountServiceImpl(AccountRepository accountRepository, RoleRepository roleRepository, BCryptPasswordEncoder passwordEncoder) {
+    @Autowired
+    public AccountServiceImpl(@Qualifier(value = "accountRepository") AccountRepository accountRepository,
+                              @Qualifier(value = "roleRepository") RoleRepository roleRepository,
+                              @Qualifier(value = "passwordEncoder")  BCryptPasswordEncoder passwordEncoder) {
         this.accountRepository = accountRepository;
         this.roleRepository = roleRepository;
         this.passwordEncoder = passwordEncoder;

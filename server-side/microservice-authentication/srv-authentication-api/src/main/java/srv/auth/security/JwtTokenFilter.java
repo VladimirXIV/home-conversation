@@ -3,7 +3,7 @@
  * Copyright (c) 2019 VTB Group. All rights reserved.
  */
 
-package srv.auth.security.jwt;
+package srv.auth.security;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

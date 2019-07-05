@@ -3,12 +3,14 @@
  * Copyright (c) 2019 VTB Group. All rights reserved.
  */
 
-package srv.auth.security.jwt;
+package srv.auth.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -33,6 +35,11 @@ public class JwtTokenProvider {
     private long validityMillSeconds = 360000000;
 
     private UserDetailsService userDetailsService;
+
+    @Autowired
+    public JwtTokenProvider(@Qualifier(value = "jwtAccountDetailsService") UserDetailsService userDetailsService) {
+        this.userDetailsService = userDetailsService;
+    }
 
     public String createToken(String username, List<Role> roles)  {
 
@@ -76,7 +83,6 @@ public class JwtTokenProvider {
         }
 
         return true;
-
     }
 
     private List<String> getRoleNames(List<Role> userRoles) {

@@ -21,7 +21,6 @@ import java.util.List;
 
 @Data
 @NoArgsConstructor
-@RequiredArgsConstructor
 @Entity
 @Table(name = "account", schema = "srv_auth")
 public class Account extends BaseEntity {

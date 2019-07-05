@@ -7,6 +7,7 @@ package srv.auth.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
@@ -14,13 +15,11 @@ import org.springframework.context.annotation.ComponentScan;
  *
  * @author waldemar
  */
-@ComponentScan(basePackages = {"srv.auth.security",
-                               "srv.auth.security.jwt",
+@ComponentScan(basePackages = {"srv.auth.config",
                                "srv.auth.controller",
                                "srv.auth.service",
                                "srv.auth.repository"
                                 })
-@SpringBootApplication
 public class SpringBootAuthenticationServiceApplication {
 
     public static void main(String[] args) {

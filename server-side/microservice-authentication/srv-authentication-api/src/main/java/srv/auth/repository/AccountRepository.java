@@ -14,9 +14,7 @@ import srv.auth.model.Account;
  *
  * @author waldemar
  */
-
+@Repository(value = "accountRepository")
 public interface AccountRepository extends JpaRepository<Account, Long> {
-
     Account findByLogin(String login);
-
 }

@@ -3,7 +3,7 @@
  * Copyright (c) 2019 VTB Group. All rights reserved.
  */
 
-package srv.auth.security.jwt;
+package srv.auth.security;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -25,8 +25,8 @@ public final class JwtAccountFactory {
 
     }
 
-    public static JwtAccount create(Account account) {
-        return new JwtAccount(account.getId(),
+    public static JwtAccountDetails create(Account account) {
+        return new JwtAccountDetails(account.getId(),
                 account.getLogin(),
                 account.getHashPassword(),
                 account.getUserId(),

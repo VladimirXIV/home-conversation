@@ -3,10 +3,11 @@
  * Copyright (c) 2019 VTB Group. All rights reserved.
  */
 
-package srv.auth.security.jwt;
+package srv.auth.security;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 import java.util.Date;
@@ -16,8 +17,8 @@ import java.util.Date;
  *
  * @author waldemar
  */
-public class JwtAccount implements UserDetails {
-
+@Component(value = "jwtAccountDetails")
+public class JwtAccountDetails implements UserDetails {
 
     private final Long id;
     private final String login;
@@ -27,7 +28,7 @@ public class JwtAccount implements UserDetails {
     private final boolean enabled;
     private final Collection<? extends GrantedAuthority> authorities;
 
-    public JwtAccount(Long id, String login, String hashPassword, Long userId, Date lastPaswordResetDate, boolean enabled, Collection<? extends GrantedAuthority> authorities) {
+    public JwtAccountDetails(Long id, String login, String hashPassword, Long userId, Date lastPaswordResetDate, boolean enabled, Collection<? extends GrantedAuthority> authorities) {
         this.id = id;
         this.login = login;
         this.hashPassword = hashPassword;

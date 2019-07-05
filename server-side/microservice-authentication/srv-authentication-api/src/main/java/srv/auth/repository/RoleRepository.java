@@ -14,12 +14,7 @@ import srv.auth.model.Role;
  *
  * @author waldemar
  */
-
+@Repository(value = "roleRepository")
 public interface RoleRepository extends JpaRepository<Role, Long> {
-
-
     Role findByName(String name);
-
-
-
 }

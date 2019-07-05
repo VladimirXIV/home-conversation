@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import srv.auth.dto.AuthenticationAccountDto;
 import srv.auth.model.Account;
-import srv.auth.security.jwt.JwtTokenProvider;
+import srv.auth.security.JwtTokenProvider;
 import srv.auth.service.AccountService;
 
 import java.util.HashMap;
@@ -50,19 +50,21 @@ public class AuthenticationController {
    public ResponseEntity login(@RequestBody AuthenticationAccountDto requestAccountDto) {
         try {
 
+            String accountName = requestAccountDto.getName();
+
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(requestAccountDto.getName(), requestAccountDto.getPassword()));
 
-            Account account = accountService.findByLogin(requestAccountDto.getName());
+            Account account = accountService.findByLogin(accountName);
 
             if (account == null) {
-                throw new UsernameNotFoundException("Account with username: " + requestAccountDto.getName() + " not found");
+                throw new UsernameNotFoundException("Account with username: " + accountName + " not found");
             }
 
-            String token = jwtTokenProvider.createToken(requestAccountDto.getName(), account.getRoles());
+            String token = jwtTokenProvider.createToken(accountName, account.getRoles());
 
             Map<Object, Object>  response = new HashMap<>();
-            response.put("username", requestAccountDto.getName());
-            response.put("token", token);
+            response.put("username: ", accountName);
+            response.put("token: ", token);
 
             return ResponseEntity.ok(response);
 

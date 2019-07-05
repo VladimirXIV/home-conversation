@@ -3,7 +3,7 @@
  * Copyright (c) 2019 VTB Group. All rights reserved.
  */
 
-package srv.auth.security;
+package srv.auth.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -23,7 +23,7 @@ import java.util.Properties;
  * @author waldemar
  */
 
-@Configuration
+/*@Configuration*/
 public class PersistenceConfig {
 
     @Bean(name = "datasource")
