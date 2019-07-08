@@ -1,14 +1,25 @@
-server:
-    port: 8090
-
 spring:
 
-    mandatory-file-encoding: UTF-8
+    profiles:
+        active: development
+
+    mandatory-file-encoding: utf-8
 
     datasource:
+        driver-class-name: org.postgresql.Driver
         url: jdbc:postgresql://localhost:5432/localdb
         username: srv_auth_role
         password: srv_auth_role
-        #jdbc-url: jdbc:postgresql://localhost:5432/localdb
-        driver-class-name: org.postgresql.Driver
-        platform: postgres
+
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                temp:
+                    use_jdbc_metadata_defaults: false
+
+server:
+    port: 8888

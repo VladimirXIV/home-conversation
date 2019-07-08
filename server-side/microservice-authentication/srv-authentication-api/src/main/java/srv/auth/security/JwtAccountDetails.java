@@ -17,7 +17,6 @@ import java.util.Date;
  *
  * @author waldemar
  */
-@Component(value = "jwtAccountDetails")
 public class JwtAccountDetails implements UserDetails {
 
     private final Long id;

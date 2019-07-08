@@ -16,8 +16,6 @@ WITH (
 
 ALTER TABLE srv_auth."account" OWNER TO "srv_auth_role";
 
-
-
 CREATE TABLE srv_auth."role"
 (
     "id" bigint not null,
@@ -33,7 +31,6 @@ WITH (
 );
 
 ALTER TABLE srv_auth."role" OWNER TO "srv_auth_role";
-
 
 CREATE TABLE srv_auth."account_role"
 (
