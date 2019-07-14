@@ -1,3 +1,7 @@
 client-side/.idea/
 server-side/.idea/
+
 server-side/microservice-authentication/.idea/
+server-side/microservice-authentication/authentication.iml
+server-side/microservice-authentication/srv-authentication-api/srv-authentication-api.iml
+server-side/microservice-authentication/srv-authentication-liquibase/srv-authentication-liquibase.iml
