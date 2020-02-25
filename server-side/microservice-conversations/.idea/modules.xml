@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/conversation.iml" filepath="$PROJECT_DIR$/conversation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/srv-conversation-api-legacy/srv-conversation-api-legacy.iml" filepath="$PROJECT_DIR$/srv-conversation-api-legacy/srv-conversation-api-legacy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/srv-conversation-api-modern/srv-conversation-api-modern.iml" filepath="$PROJECT_DIR$/srv-conversation-api-modern/srv-conversation-api-modern.iml" />
+    </modules>
+  </component>
+</project>

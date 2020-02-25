@@ -9,9 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import srv.auth.dto.AccountDto;
 import srv.auth.model.Account;
 import srv.auth.service.AccountService;
@@ -44,6 +42,16 @@ public class AdminRestController {
         AccountDto accountDto = AccountDto.fromAccount(account);
 
         return new ResponseEntity<>(accountDto, HttpStatus.OK);
+    }
+
+    @PostMapping(value = "user/new")
+    @ResponseBody
+    public ResponseEntity<AccountDto> createAccount(AccountDto accountDto) {
+
+
+
+
+        return null;
     }
 
 }

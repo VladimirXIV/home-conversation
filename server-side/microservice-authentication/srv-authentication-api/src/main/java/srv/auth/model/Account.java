@@ -31,7 +31,7 @@ public class Account extends BaseEntity {
     @Column(name = "password")
     private String hashPassword;
 
-    @Column(name = "user_id")
+    @Column(name = "id")
     @ValueInc(startvalue = 900)
     private Long userId;
 

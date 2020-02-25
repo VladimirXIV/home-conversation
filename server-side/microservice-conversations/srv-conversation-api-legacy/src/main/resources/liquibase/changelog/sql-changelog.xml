@@ -1,0 +1,29 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="sqlDir" value="../scripts/sql"/>
+
+    <changeSet author="waldemar" id="srv_conversation_changeset_number_1">
+        <sqlFile path="${sqlDir}/creating_role.sql"  relativeToChangelogFile="true" encoding="UTF8"/>
+    </changeSet>
+
+    <changeSet author="waldemar" id="srv_conversation_changeset_number_2">
+        <sqlFile path="${sqlDir}/creating_schema.sql" relativeToChangelogFile="true" encoding="UTF8"/>
+    </changeSet>
+
+    <changeSet author="waldemar" id="srv_conversation_changeset_number_3">
+        <sqlFile path="${sqlDir}/creating_sequences.sql" relativeToChangelogFile="true" encoding="UTF8"/>
+    </changeSet>
+
+    <changeSet author="waldemar" id="srv_conversation_changeset_number_4">
+        <sqlFile path="${sqlDir}/creating_tables.sql" relativeToChangelogFile="true" encoding="UTF8"/>
+    </changeSet>
+
+    <changeSet author="waldemar" id="srv_conversation_changeset_number_5">
+        <sqlFile path="${sqlDir}/populate_with_data.sql" relativeToChangelogFile="true" encoding="UTF8"/>
+    </changeSet>
+
+</databaseChangeLog>

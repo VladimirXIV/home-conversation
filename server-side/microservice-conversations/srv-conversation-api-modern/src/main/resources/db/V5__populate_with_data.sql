@@ -1,0 +1,15 @@
+insert into conversation.srv_converse.conversation (id, title, created_at, updated_at, creator_id) values
+(nextval('srv_converse.conversation_seq'), 'Чат с Петром', '1985-01-16', '2001-02-01', 13),
+(nextval('srv_converse.conversation_seq'), 'Чат с Кузьмой', '1986-02-17', '2001-02-02', 14),
+(nextval('srv_converse.conversation_seq'), 'Чат с Иваном', '1987-03-18', '2003-03-03', 15),
+(nextval('srv_converse.conversation_seq'), 'Чат с Маргаритой', '1988-04-19', '2004-03-04', 16),
+(nextval('srv_converse.conversation_seq'), 'Чат с Емелей', '1989-05-20', '2005-04-05', 17),
+(nextval('srv_converse.conversation_seq'), 'Чат с Федором', '1990-06-21', '2006-04-06', 18),
+(nextval('srv_converse.conversation_seq'), 'Школьный чат', '1991-07-22', '2006-04-07', 19),
+(nextval('srv_converse.conversation_seq'), 'Кроссфит по субботам', '1992-08-23', '2006-05-08', 20),
+(nextval('srv_converse.conversation_seq'), 'Фанаты Зенита СПб', '1993-09-24', '2007-05-10', 21),
+(nextval('srv_converse.conversation_seq'), 'Чат с Влади', '1994-02-25', '2007-07-11', 22),
+(nextval('srv_converse.conversation_seq'), 'Выезды в Финляндию', '1995-11-26', '2007-07-12', 23),
+(nextval('srv_converse.conversation_seq'), 'Чат с Фомой', '1996-11-27', '2008-08-13', 24),
+(nextval('srv_converse.conversation_seq'), 'Одноклассники(не спившиеся еще)', '1997-11-28', '2009-10-14', 25),
+(nextval('srv_converse.conversation_seq'), 'Прогулки по Санкт-Петербургу', '1998-11-29', '2009-10-15', 26);
