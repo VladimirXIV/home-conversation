@@ -26,7 +26,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <org.hibernate-version>5.4.2.Final</org.hibernate-version>
-        <org.springframework-version>5.2.1.RELEASE</org.springframework-version>
+        <org.springframework-version>5.2.4.RELEASE</org.springframework-version>
         <junit-version>4.13</junit-version>
         <liquibase.core-version>3.6.2</liquibase.core-version>
     </properties>
