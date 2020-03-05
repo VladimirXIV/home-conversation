@@ -9,9 +9,8 @@ import java.util.Collection;
  * @since 03-Dec-19
  */
 public interface ConversationDAO {
-    public Long createConversation(Conversation conversation);
+    public void createConversation(Conversation conversation);
     public Collection<Conversation> retrieveAllConversations();
     public Conversation retrieveConversation(Long conversationId);
-    public void updateConversation(Conversation newConversation);
-    public void  deleteConversation(Long conversationId);
+    public Conversation updateConversation(Conversation newConversation);
 }

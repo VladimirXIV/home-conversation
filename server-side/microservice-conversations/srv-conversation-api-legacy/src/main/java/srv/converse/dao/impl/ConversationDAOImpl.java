@@ -1,15 +1,13 @@
 package srv.converse.dao.impl;
 
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
 import srv.converse.dao.ConversationDAO;
 import srv.converse.model.Conversation;
-import srv.converse.utils.HibernateUtil;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Query;
 import java.util.Collection;
-
 
 /**
  * @author vladimir.fedotov
@@ -17,76 +15,54 @@ import java.util.Collection;
  */
 public class ConversationDAOImpl implements ConversationDAO {
 
-    @Override
-    public Long createConversation(Conversation conversation) {
+    private EntityManagerFactory entityManagerFactory;
 
-        Long id = null;
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            session.beginTransaction();
-            id = (Long)session.save(conversation);
-            session.getTransaction().commit();
-        } catch (HibernateException hibernateException) {
-            hibernateException.printStackTrace();
-        }
-        return id;
+    public ConversationDAOImpl(EntityManagerFactory entityManagerFactory) {
+        this.entityManagerFactory = entityManagerFactory;
+    }
+
+    @Override
+    public void createConversation(Conversation conversation) {
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        EntityTransaction entityTransaction = entityManager.getTransaction();
+        entityTransaction.begin();
+
+        entityManager.persist(conversation);
+
+        entityTransaction.commit();
+        entityManager.close();
     }
 
     @Override
     public Conversation retrieveConversation(Long conversationId) {
-        Conversation conversation = null;
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            session.beginTransaction();
-            conversation = session.get(Conversation.class, conversationId);
-            session.getTransaction().commit();
-        } catch (HibernateException hibernateException) {
-            hibernateException.printStackTrace();
-        }
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+
+        Conversation conversation = entityManager.find(Conversation.class, conversationId);
+
+        entityManager.close();
+
         return conversation;
     }
 
 
     public Collection<Conversation> retrieveAllConversations() {
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        Query query = entityManager.createQuery("select conv FROM сonversation conv");
 
-        Collection<Conversation> conversations = null;
-
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            CriteriaBuilder criteriaBuilder = session.getCriteriaBuilder();
-
-            CriteriaQuery<Conversation> criteriaQuery = criteriaBuilder.createQuery(Conversation.class);
-            criteriaQuery.from(Conversation.class);
-            conversations = session.createQuery(criteriaQuery).getResultList();
-
-        } catch (HibernateException hibernateException) {
-            hibernateException.printStackTrace();
-        }
-
-        return conversations;
+        return  (Collection<Conversation>) query.getResultList();
     }
 
     @Override
-    public void updateConversation(Conversation conversation) {
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            session.beginTransaction();
-            session.update(conversation);
-            session.getTransaction().commit();
-        } catch (HibernateException hibernateException) {
-            hibernateException.printStackTrace();
-        }
-    }
+    public Conversation updateConversation(Conversation conversation) {
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        EntityTransaction entityTransaction = entityManager.getTransaction();
+        entityTransaction.begin();
 
-    @Override
-    public void deleteConversation(Long conversationId) {
+        conversation = entityManager.merge(conversation);
 
-        Conversation conversation = retrieveConversation(conversationId);
+        entityTransaction.commit();
+        entityManager.close();
 
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            session.beginTransaction();
-
-            session.delete(conversation);
-
-            session.getTransaction().commit();
-        } catch (HibernateException hibernateException) {
-            hibernateException.printStackTrace();
-        }
+        return conversation;
     }
 }

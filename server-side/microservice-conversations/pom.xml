@@ -11,7 +11,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>srv-conversation-api-modern</module>
+        <!--<module>srv-conversation-api-modern</module>-->
         <module>srv-conversation-api-legacy</module>
     </modules>
 

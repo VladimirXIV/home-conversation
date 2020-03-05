@@ -27,7 +27,7 @@
 
         <org.hibernate-version>5.4.2.Final</org.hibernate-version>
         <org.springframework-version>5.2.1.RELEASE</org.springframework-version>
-
+        <junit-version>4.13</junit-version>
         <liquibase.core-version>3.6.2</liquibase.core-version>
     </properties>
 
@@ -68,6 +68,13 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>${org.springframework-version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit-version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -118,8 +125,6 @@
                     <changeLogFile>${project.basedir}\changelog\sql-changelog.xml</changeLogFile>
                 </configuration>
             </plugin>
-
-
 
         </plugins>
 

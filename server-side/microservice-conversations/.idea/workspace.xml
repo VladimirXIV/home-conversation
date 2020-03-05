@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d08d3699-9474-4fa4-994d-dd6e3a95c91a" name="Default Changelist" comment="" />
+    <list default="true" id="d08d3699-9474-4fa4-994d-dd6e3a95c91a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/197114bb35e6483b526d7d5404b0531a1abe9e55" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/750c2760e07e117c2db5bf42cb0eed06ded856a9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/750c2760e07e117c2db5bf42cb0eed06ded856a9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/799aa1f79de2c136219fe95379db537ecbed1054" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/a/8a43748c6c120a4ea8084880e903247172ec410a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8d8f05945c5a033f858cfa7eabf3c1ca383ace53" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a0da6d98ce4e364268f14ac396a6d87ca0ecacd2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d257d8173b459ec0e7d70cf379715d48aaf75fc9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/db07177047bd0fe6ca45ef2a3306993e62045e62" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e82617c8062a6c2d0fd5c61e38fc7d7e08522fd9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/edddcdde9f2681b6e8e1040edd12ba0b6e458317" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/edddcdde9f2681b6e8e1040edd12ba0b6e458317" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/1/f1315c15c4f8feb472d346d3bc1b97de95a72825" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f922afc2b476df1142927b8dd8620c93bffacebf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conversation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/conversation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/ConversationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/ConversationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/impl/ConversationDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/impl/ConversationDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/impl/DeletedConversationDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/impl/ArchivedConversationDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/application-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/creating_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/creating_tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/test/java/srv/converse/controller/ConversationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/test/java/srv/converse/controller/ConversationControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/srv-conversation-api-legacy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/srv-conversation-api-legacy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-modern/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-modern/src/main/java/srv/converse/application/SpringBootAuthenticationServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-modern/src/main/java/srv/converse/model/Conversation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-modern/src/main/java/srv/converse/model/DeletedConversation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-modern/src/main/java/srv/converse/model/Participant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-modern/src/main/java/srv/converse/repository/ConversationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-modern/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-modern/src/main/resources/db/V1__creating_role.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-modern/src/main/resources/db/V2__creating_schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-modern/src/main/resources/db/V3__creating_sequences.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-modern/src/main/resources/db/V4__creating_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-modern/src/main/resources/db/V5__populate_with_data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-modern/srv-conversation-api-modern.iml" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +56,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -23,7 +67,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1UiGDl3zHwB0FE3kv6PDTsetXOf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/srv-conversation-api-modern/src/main/java" />
@@ -62,7 +108,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.srv-conversation-api-legacy [clean install]">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.29 [localhost]">
+    <configuration name="ConversationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="srv-conversation-api-legacy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="srv.converse.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="srv.converse.controller" />
+      <option name="MAIN_CLASS_NAME" value="srv.converse.controller.ConversationControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="srv-conversation-api-legacy [clean install]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings">
@@ -95,7 +156,7 @@
             </option>
             <option name="passParentEnv" value="true" />
             <option name="runMavenInBackground" value="true" />
-            <option name="skipTests" value="false" />
+            <option name="skipTests" value="true" />
             <option name="vmOptions" value="" />
           </MavenRunnerSettings>
         </option>
@@ -459,6 +520,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ConversationControllerTest" />
       <item itemvalue="Maven.srv-conversation-api-modern [clean install]" />
       <item itemvalue="Maven.srv-conversation-api-legacy [liquibase:update]" />
       <item itemvalue="Maven.srv-conversation-api-legacy [clean install]" />
@@ -467,6 +529,11 @@
       <item itemvalue="Spring Boot.SpringBootAuthenticationServiceApplication (1)" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.29 [localhost]" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ConversationControllerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -491,10 +558,37 @@
       <workItem from="1582285975101" duration="1308000" />
       <workItem from="1582622266204" duration="403000" />
       <workItem from="1582622704627" duration="14549000" />
+      <workItem from="1582708874250" duration="16215000" />
+      <workItem from="1583319809422" duration="947000" />
+      <workItem from="1583414373032" duration="4778000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/srv-conversation-api-legacy/src/test/java/srv/converse/controller/ConversationControllerTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
