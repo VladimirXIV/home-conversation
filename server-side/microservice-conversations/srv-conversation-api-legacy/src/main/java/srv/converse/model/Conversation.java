@@ -2,6 +2,7 @@ package srv.converse.model;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 
 /**
  * Conversation.
@@ -12,6 +13,7 @@ public class Conversation extends BaseEntity {
 
     private String title;
     private Long creatorId;
+    private Date updatedAt;
     private Collection<Participant> participants;
     private Collection<ArchivedConversation> archivedConversations;
 
@@ -34,6 +36,14 @@ public class Conversation extends BaseEntity {
 
     public void setCreatorId(Long creatorId) {
         this.creatorId = creatorId;
+    }
+
+    public Date getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(Date updatedAt) {
+        this.updatedAt = updatedAt;
     }
 
     public Collection<Participant> getParticipants() {

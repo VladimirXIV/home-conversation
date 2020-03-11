@@ -1,9 +1,6 @@
-/*
- * VTB Group. Do not reproduce without permission in writing.
- * Copyright (c) 2019 VTB Group. All rights reserved.
- */
-
 package srv.converse.model;
+
+import java.util.Date;
 
 /**
  * Participant.
@@ -14,6 +11,7 @@ public class Participant extends BaseEntity {
 
     private Long userId;
     private Long roleId;
+    private Date updatedAt;
     private Conversation conversation;
 
     public Long getUserId() {
@@ -30,6 +28,14 @@ public class Participant extends BaseEntity {
 
     public void setRoleId(Long roleId) {
         this.roleId = roleId;
+    }
+
+    public Date getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(Date updatedAt) {
+        this.updatedAt = updatedAt;
     }
 
     public Conversation getConversation() {
