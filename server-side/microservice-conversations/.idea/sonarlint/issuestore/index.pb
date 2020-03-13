@@ -53,3 +53,5 @@ Osrv-conversation-api-legacy/src/main/java/srv/converse/dto/ConversationDTO.java
 asrv-conversation-api-legacy/src/test/java/srv/converse/controller/ConversationControllerTest.java,c\1\c1c3fe52c100842fccd1def17e5257c806efd637
 ê
 `srv-conversation-api-legacy/src/main/java/srv/converse/dao/impl/ArchivedConversationDAOImpl.java,c\3\c37b791dc1e1bf0a374202835563663a7e7a9cb2
+x
+Hsrv-conversation-api-legacy/src/main/java/srv/converse/model/Report.java,a\6\a633ffe31baedf398f8c762c58b61f9e67951239

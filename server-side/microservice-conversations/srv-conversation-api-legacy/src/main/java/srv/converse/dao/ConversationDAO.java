@@ -13,4 +13,5 @@ public interface ConversationDAO {
     public Collection<Conversation> retrieveAllConversations();
     public Conversation retrieveConversation(Long conversationId);
     public Conversation updateConversation(Conversation newConversation);
+    public void removeConversation(Long id);
 }

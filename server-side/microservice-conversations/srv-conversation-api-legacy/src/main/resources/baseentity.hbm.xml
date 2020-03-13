@@ -30,13 +30,13 @@
                 <column name="updated_at" not-null="true"/>
             </property>
 
-            <set name="participants" inverse="true" cascade="all">
+            <set name="participants" inverse="true" cascade="all-delete-orphan">
                 <key column="conversation_id" not-null="true" />
-                <one-to-many class="Participant" />
+                <one-to-many class="Participant"/>
             </set>
 
-            <set name="archivedConversations" inverse="true" cascade="all">
-                <key column="archivedconversation_id" not-null="true" />
+            <set name="archivedConversations" inverse="true" cascade="all-delete-orphan">
+                <key column="conversation_id" not-null="true" />
                 <one-to-many class="ArchivedConversation" />
             </set>
 
@@ -67,6 +67,11 @@
             </property>
 
             <many-to-one name="conversation" class="Conversation" column="conversation_id" not-null="true" />
+            
+            <set name="reports" cascade="all-delete-orphan">
+                <key column="participant_id" not-null="true" />
+                <one-to-many class="Report" />
+            </set>
 
         </union-subclass>
 

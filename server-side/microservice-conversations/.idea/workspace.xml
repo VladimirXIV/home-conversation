@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d08d3699-9474-4fa4-994d-dd6e3a95c91a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/model/Report.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/ReportDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/impl/ReportDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6d741d92ca904d58545b5c26f240757657285613" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6d741d92ca904d58545b5c26f240757657285613" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ada716270b9081969d44adf466d3544c3b645179" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ada716270b9081969d44adf466d3544c3b645179" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/model/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/model/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/model/Conversation.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/model/Conversation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/ConversationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/ConversationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/impl/ConversationDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/impl/ConversationDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/model/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/model/Participant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/baseentity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/baseentity.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/creating_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/creating_tables.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -531,6 +537,7 @@
       <workItem from="1583833691425" duration="707000" />
       <workItem from="1583834955654" duration="20000" />
       <workItem from="1583848897770" duration="1949000" />
+      <workItem from="1584094745766" duration="9507000" />
     </task>
     <servers />
   </component>

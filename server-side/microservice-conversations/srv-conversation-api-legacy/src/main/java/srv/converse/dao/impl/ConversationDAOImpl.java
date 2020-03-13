@@ -44,7 +44,6 @@ public class ConversationDAOImpl implements ConversationDAO {
         return conversation;
     }
 
-
     public Collection<Conversation> retrieveAllConversations() {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         Query query = entityManager.createQuery("select conv FROM сonversation conv");
@@ -64,5 +63,19 @@ public class ConversationDAOImpl implements ConversationDAO {
         entityManager.close();
 
         return conversation;
+    }
+
+    @Override
+    public void removeConversation(Long id) {
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+
+        Conversation conversation = entityManager.find(Conversation.class, id);
+
+        EntityTransaction entityTransaction = entityManager.getTransaction();
+        entityTransaction.begin();
+        entityManager.remove(conversation); //delete
+        entityTransaction.commit();
+
+        entityManager.close();
     }
 }
