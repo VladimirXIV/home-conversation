@@ -55,3 +55,17 @@ asrv-conversation-api-legacy/src/test/java/srv/converse/controller/ConversationC
 `srv-conversation-api-legacy/src/main/java/srv/converse/dao/impl/ArchivedConversationDAOImpl.java,c\3\c37b791dc1e1bf0a374202835563663a7e7a9cb2
 x
 Hsrv-conversation-api-legacy/src/main/java/srv/converse/model/Report.java,a\6\a633ffe31baedf398f8c762c58b61f9e67951239
+y
+Isrv-conversation-api-legacy/src/main/java/srv/converse/dao/ReportDAO.java,6\5\652e681c6e45318ea126a8a81e2c7f2ab3da88aa
+Ç
+Rsrv-conversation-api-legacy/src/main/java/srv/converse/dao/impl/ReportDAOImpl.java,c\3\c3dbf1bff4621f83f85d2d9ce08b4f23362f1f45
+y
+Isrv-conversation-api-legacy/src/main/java/srv/converse/dto/ReportDTO.java,a\f\af493c04390b8d3826d01c343339ce0ae4ccc845
+Å
+Qsrv-conversation-api-legacy/src/main/java/srv/converse/service/ReportService.java,8\7\87d52bc47e8d3af5580940678071348443c5be58
+ä
+Zsrv-conversation-api-legacy/src/main/java/srv/converse/service/impl/ReportServiceImpl.java,e\3\e3557b923485285961f1d570d4a102f51848458e
+á
+Wsrv-conversation-api-legacy/src/main/java/srv/converse/controller/ReportController.java,4\1\411262dd2920a2eeec4f3136be6f9b7acf418340
+ï
+esrv-conversation-api-legacy/src/main/java/srv/converse/controller/ArchivedConversationController.java,9\2\92dce4f711460fb083395efb3eb89a08f852827d

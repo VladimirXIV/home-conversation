@@ -17,17 +17,17 @@ public class ArchivedConversationServiceImpl implements ArchivedConversationServ
     }
 
     @Override
-    public void createDeletedConversation(ArchivedConversation archivedConversation) {
-        archivedConversationDAO.createDeletedConversationDAO(archivedConversation);
+    public void createArchivedConversation(ArchivedConversation archivedConversation) {
+        archivedConversationDAO.createArchivedConversationDAO(archivedConversation);
     }
 
     @Override
-    public ArchivedConversation retreiveDeletedConversation(int archivedConversationId) {
-        return archivedConversationDAO.retrieveDeletedConversationDAO(archivedConversationId);
+    public ArchivedConversation retrieveArchivedConversation(Long archivedConversationId) {
+        return archivedConversationDAO.retrieveArchivedConversationDAO(archivedConversationId);
     }
 
     @Override
-    public void updateParticipant(ArchivedConversation archivedConversation) {
-        archivedConversationDAO.updateDeletedConversationDAO(archivedConversation);
+    public void updateArchivedConversation(ArchivedConversation archivedConversation) {
+        archivedConversationDAO.updateArchivedConversationDAO(archivedConversation);
     }
 }

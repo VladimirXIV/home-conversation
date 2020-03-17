@@ -12,19 +12,15 @@ public class ArchivedConversationDTO {
 
     private Long id;
     private Long participantId;
-
-    private Date updatedAt;
     private Date createdAt;
 
-    static ArchivedConversationDTO fromArchivedConversation(ArchivedConversation archivedConversation) {
+    public static ArchivedConversationDTO fromArchivedConversation(ArchivedConversation archivedConversation) {
 
         ArchivedConversationDTO archivedConversationDTO = new ArchivedConversationDTO();
 
         archivedConversationDTO.setId(archivedConversation.getId());
         archivedConversationDTO.setParticipantId(archivedConversation.getParticipantId());
-
         archivedConversationDTO.setCreatedAt(archivedConversation.getCreatedAt());
-        archivedConversationDTO.setUpdatedAt(archivedConversation.getUpdatedAt());
 
         return archivedConversationDTO;
     }
@@ -43,14 +39,6 @@ public class ArchivedConversationDTO {
 
     public void setParticipantId(Long participantId) {
         this.participantId = participantId;
-    }
-
-    public Date getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(Date updatedAt) {
-        this.updatedAt = updatedAt;
     }
 
     public Date getCreatedAt() {

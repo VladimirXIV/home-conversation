@@ -16,20 +16,20 @@ CACHE 1;
 ALTER SEQUENCE srv_converse."participant_seq" OWNER TO "srv_convers_role";
 COMMIT;
 
-CREATE SEQUENCE srv_converse."role_seq"
+CREATE SEQUENCE srv_converse."archived_conversation"
 INCREMENT 1
 MINVALUE 1
 MAXVALUE 9223372036854775807
 START 1
 CACHE 1;
-ALTER SEQUENCE srv_converse."role_seq" OWNER TO "srv_convers_role";
+ALTER SEQUENCE srv_converse."archived_conversation" OWNER TO "srv_convers_role";
 COMMIT;
 
-CREATE SEQUENCE srv_converse."deleted_conversation_seq"
+CREATE SEQUENCE srv_converse."report"
 INCREMENT 1
 MINVALUE 1
 MAXVALUE 9223372036854775807
 START 1
 CACHE 1;
-ALTER SEQUENCE srv_converse."deleted_conversation_seq" OWNER TO "srv_convers_role";
+ALTER SEQUENCE srv_converse."report" OWNER TO "srv_convers_role";
 COMMIT;

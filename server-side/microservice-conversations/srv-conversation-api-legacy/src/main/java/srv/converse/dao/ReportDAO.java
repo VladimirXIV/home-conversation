@@ -13,6 +13,6 @@ public interface ReportDAO {
     public void createReport(Report report);
     public Collection<Report> retrieveAllReports();
     public Report retrieveReport(Long reportId);
-    public Report updateReport(Conversation newReport);
+    public Report updateReport(Report newReport);
     public void removeReport(Long reportId);
 }

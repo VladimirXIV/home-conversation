@@ -9,9 +9,9 @@ import srv.converse.model.ArchivedConversation;
  */
 public interface ArchivedConversationService {
 
-    public void createDeletedConversation(ArchivedConversation deletedconversation);
+    public void createArchivedConversation(ArchivedConversation archivedConversation);
 
-    public ArchivedConversation retreiveDeletedConversation(int deletedConversationId);
+    public ArchivedConversation retrieveArchivedConversation(Long archivedConversationId);
 
-    public void updateParticipant(ArchivedConversation deletedconversation);
+    public void updateArchivedConversation(ArchivedConversation archivedConversation);
 }

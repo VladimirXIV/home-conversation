@@ -56,6 +56,7 @@ create table srv_converse."report"
     "report_type" character varying(128),
     "user_id" bigint,
     "created_at" timestampz,
+    "updated_at" timestampz,
     "participant_id" bigint,
 
     constraint "pk_report" primary key ("id"),

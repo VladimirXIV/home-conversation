@@ -21,7 +21,7 @@ public class ArchivedConversationDAOImpl implements ArchivedConversationDAO {
     }
 
     @Override
-    public void createDeletedConversationDAO(ArchivedConversation archivedConversation) {
+    public void createArchivedConversationDAO(ArchivedConversation archivedConversation) {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         EntityTransaction entityTransaction = entityManager.getTransaction();
         entityTransaction.begin();
@@ -33,7 +33,7 @@ public class ArchivedConversationDAOImpl implements ArchivedConversationDAO {
     }
 
     @Override
-    public ArchivedConversation retrieveDeletedConversationDAO(int archivedConversationId) {
+    public ArchivedConversation retrieveArchivedConversationDAO(Long archivedConversationId) {
 
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
@@ -45,7 +45,7 @@ public class ArchivedConversationDAOImpl implements ArchivedConversationDAO {
     }
 
     @Override
-    public ArchivedConversation updateDeletedConversationDAO(ArchivedConversation archivedConversation) {
+    public ArchivedConversation updateArchivedConversationDAO(ArchivedConversation archivedConversation) {
 
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         EntityTransaction entityTransaction = entityManager.getTransaction();

@@ -46,6 +46,6 @@ public class ConversationServiceImpl implements ConversationService {
     @Override
     public void archiveConversation(Long conversationId) {
         ArchivedConversation archivedConversation = new ArchivedConversation();
-        archivedConversationDAO.createDeletedConversationDAO(archivedConversation);
+        archivedConversationDAO.createArchivedConversationDAO(archivedConversation);
     }
 }
