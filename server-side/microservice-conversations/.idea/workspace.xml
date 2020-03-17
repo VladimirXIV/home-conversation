@@ -2,75 +2,142 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d08d3699-9474-4fa4-994d-dd6e3a95c91a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/controller/ArchivedConversationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/controller/ReportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dto/ReportDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/service/ReportService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/service/impl/ReportServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/sequences_increment.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6d741d92ca904d58545b5c26f240757657285613" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6d741d92ca904d58545b5c26f240757657285613" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a633ffe31baedf398f8c762c58b61f9e67951239" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a633ffe31baedf398f8c762c58b61f9e67951239" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ada716270b9081969d44adf466d3544c3b645179" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ada716270b9081969d44adf466d3544c3b645179" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/catalina.2019-12-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/catalina.2019-12-12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/catalina.2019-12-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/host-manager.2019-12-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/host-manager.2019-12-12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/host-manager.2019-12-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/localhost.2019-12-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/localhost.2019-12-12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/localhost.2019-12-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/localhost_access_log.2019-12-11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/localhost_access_log.2019-12-12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/localhost_access_log.2019-12-13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/manager.2019-12-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/manager.2019-12-12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/logs/manager.2019-12-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/temp/4-conversation-v1/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/temp/5-conversation-v1/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/META-INF/maven/proj.home.conversation/srv-conversation-api-legacy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/META-INF/maven/proj.home.conversation/srv-conversation-api-legacy/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/application-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/baseentity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/baseentity.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/application-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/baseentity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/baseentity.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/controller/ConversationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/controller/ConversationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/controller/ParticipantController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/controller/ParticipantController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/dao/ConversationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/dao/ConversationDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/dao/DeletedConversationDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/dao/ParticipantDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/dao/ParticipantDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/dao/impl/ConversationDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/dao/impl/ConversationDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/dao/impl/DeletedConversationDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/dao/impl/ParticipantDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/dao/impl/ParticipantDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/model/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/model/BaseEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/model/Conversation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/model/Conversation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/model/DeletedConversation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/model/Participant.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/model/Participant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/service/ConversationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/service/ConversationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/service/DeletedConversationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/service/ParticipantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/service/ParticipantService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/service/impl/ConversationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/service/impl/ConversationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/service/impl/DeletedConversationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/service/impl/ParticipantServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/service/impl/ParticipantServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/classes/srv/converse/utils/HibernateUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/webapps/conversation-v1/WEB-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/work/Catalina/localhost/ROOT/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/work/Catalina/localhost/ROOT/org/apache/jsp/index_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.29/work/Catalina/localhost/manager/SESSIONS.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flywaydb_flyway_core_6_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_10_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_1_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/350c98cdf5c55e001059ed7471af4c531aa65f9f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/350c98cdf5c55e001059ed7471af4c531aa65f9f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/411262dd2920a2eeec4f3136be6f9b7acf418340" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/411262dd2920a2eeec4f3136be6f9b7acf418340" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/ArchivedConversationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/ArchivedConversationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/ReportDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/ReportDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/impl/ArchivedConversationDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/impl/ArchivedConversationDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/impl/ReportDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dao/impl/ReportDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dto/ArchivedConversationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/dto/ArchivedConversationDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/model/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/model/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/service/ArchivedConversationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/service/ArchivedConversationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/service/impl/ArchivedConversationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/service/impl/ArchivedConversationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/service/impl/ConversationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/java/srv/converse/service/impl/ConversationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/application-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/baseentity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/baseentity.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/changelog/sql-changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/changelog/sql-changelog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/creating_role.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/creating_role.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/creating_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/creating_schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/creating_sequences.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/creating_sequences.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/creating_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/creating_tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/populate_with_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/liquibase/scripts/sql/populate_with_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/application-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/baseentity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/baseentity.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/liquibase/changelog/sql-changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/liquibase/changelog/sql-changelog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/src/main/resources/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/liquibase/scripts/sql/creating_role.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/liquibase/scripts/sql/creating_role.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/liquibase/scripts/sql/creating_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/liquibase/scripts/sql/creating_schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/liquibase/scripts/sql/creating_sequences.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/liquibase/scripts/sql/creating_sequences.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/liquibase/scripts/sql/creating_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/liquibase/scripts/sql/creating_tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/liquibase/scripts/sql/populate_with_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/liquibase/scripts/sql/populate_with_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/dao/ArchivedConversationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/dao/ArchivedConversationDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/dao/ConversationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/dao/ConversationDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/dao/impl/ArchivedConversationDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/dao/impl/ArchivedConversationDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/dao/impl/ConversationDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/dao/impl/ConversationDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/dto/ArchivedConversationDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/dto/ArchivedConversationDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/model/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/model/BaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/model/Conversation.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/model/Conversation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/model/Participant.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/model/Participant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/service/ArchivedConversationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/service/ArchivedConversationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/service/impl/ArchivedConversationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/service/impl/ArchivedConversationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/service/impl/ConversationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/srv/converse/service/impl/ConversationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/classes/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1.war" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/application-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/baseentity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/baseentity.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/application-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/baseentity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/baseentity.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/liquibase/changelog/sql-changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/liquibase/changelog/sql-changelog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/liquibase/scripts/sql/creating_role.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/liquibase/scripts/sql/creating_role.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/liquibase/scripts/sql/creating_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/liquibase/scripts/sql/creating_schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/liquibase/scripts/sql/creating_sequences.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/liquibase/scripts/sql/creating_sequences.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/liquibase/scripts/sql/creating_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/liquibase/scripts/sql/creating_tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/liquibase/scripts/sql/populate_with_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/liquibase/scripts/sql/populate_with_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/dao/ArchivedConversationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/dao/ArchivedConversationDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/dao/ConversationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/dao/ConversationDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/dao/impl/ArchivedConversationDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/dao/impl/ArchivedConversationDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/dao/impl/ConversationDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/dao/impl/ConversationDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/dto/ArchivedConversationDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/dto/ArchivedConversationDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/model/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/model/BaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/model/Conversation.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/model/Conversation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/model/Participant.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/model/Participant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/service/ArchivedConversationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/service/ArchivedConversationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/service/impl/ArchivedConversationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/service/impl/ArchivedConversationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/service/impl/ConversationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/srv/converse/service/impl/ConversationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/liquibase/changelog/sql-changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/liquibase/changelog/sql-changelog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/classes/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/liquibase/scripts/sql/creating_role.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/liquibase/scripts/sql/creating_role.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/liquibase/scripts/sql/creating_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/liquibase/scripts/sql/creating_schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/liquibase/scripts/sql/creating_sequences.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/liquibase/scripts/sql/creating_sequences.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/liquibase/scripts/sql/creating_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/liquibase/scripts/sql/creating_tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/liquibase/scripts/sql/populate_with_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/liquibase/scripts/sql/populate_with_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/srv-conversation-api-legacy/target/conversation-v1/WEB-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,8 +159,8 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1UiGDl3zHwB0FE3kv6PDTsetXOf" />
@@ -104,7 +171,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTTP Request" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/srv-conversation-api-modern/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/srv-conversation-api-legacy" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -117,15 +184,35 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Home Projects\home-conversation-project\home-conversation-master\server-side\microservice-conversations\srv-conversation-api-modern\src\main\resources\db" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Home Projects\home-conversation-project\home-conversation-master\server-side\microservice-conversations\srv-conversation-api-legacy\src\main\resources\liquibase" />
       <recent name="D:\Home Projects\home-conversation-project\home-conversation-master\server-side\microservice-conversations\srv-conversation-api-modern\src\main\java\srv\converse\repository" />
       <recent name="D:\Home Projects\home-conversation-project\home-conversation-master\server-side\microservice-conversations\srv-conversation-api-modern\src\main" />
       <recent name="D:\Home Projects\home-conversation-project\home-conversation-master\server-side\microservice-conversations\srv-conversation-api-modern\src\main\java" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Home Projects\home-conversation-project\home-conversation-master\server-side\microservice-conversations\srv-conversation-api-modern\src\main\resources\db" />
-    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/participant/findAll" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/participant/2" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -139,7 +226,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.srv-conversation-api-legacy [clean install]">
+  <component name="RunManager" selected="Maven.srv-conversation-api-legacy [tomcat7:redeploy]">
+    <configuration name="participant-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/participant-requests.http" index="2">
+      <method v="2" />
+    </configuration>
+    <configuration name="participant-requests#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/participant-requests.http" index="3">
+      <method v="2" />
+    </configuration>
     <configuration name="ConversationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="srv-conversation-api-legacy" />
       <extension name="coverage">
@@ -304,7 +397,7 @@
             </option>
             <option name="passParentEnv" value="true" />
             <option name="runMavenInBackground" value="true" />
-            <option name="skipTests" value="false" />
+            <option name="skipTests" value="true" />
             <option name="vmOptions" value="" />
           </MavenRunnerSettings>
         </option>
@@ -465,17 +558,17 @@
         </SHUTDOWN>
         <EnvironmentVariables>
           <option name="NAME" value="CATALINA_BASE" />
-          <option name="VALUE" value="D:\Home Projects\home-conversation-project\apache-tomcat-9.0.29" />
+          <option name="VALUE" value="D:\MyProject\home-conversation\apache-tomcat-9.0.29" />
           <option name="IS_PREDEFINED" value="false" />
         </EnvironmentVariables>
         <EnvironmentVariables>
           <option name="NAME" value="CATALINA_HOME" />
-          <option name="VALUE" value="D:\Home Projects\home-conversation-project\apache-tomcat-9.0.29" />
+          <option name="VALUE" value="D:\MyProject\home-conversation\apache-tomcat-9.0.29" />
           <option name="IS_PREDEFINED" value="false" />
         </EnvironmentVariables>
         <EnvironmentVariables>
           <option name="NAME" value="CATALINA_TMPDIR" />
-          <option name="VALUE" value="D:\Home Projects\home-conversation-project\apache-tomcat-9.0.29\temp" />
+          <option name="VALUE" value="D:\MyProject\home-conversation\apache-tomcat-9.0.29\temp" />
           <option name="IS_PREDEFINED" value="false" />
         </EnvironmentVariables>
         <EnvironmentVariables>
@@ -551,6 +644,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="HTTP Request.participant-requests#2" />
       <item itemvalue="JUnit.ConversationControllerTest" />
       <item itemvalue="Maven.srv-conversation-api-modern [clean install]" />
       <item itemvalue="Maven.srv-conversation-api-legacy [liquibase:update]" />
@@ -559,9 +653,12 @@
       <item itemvalue="Spring Boot.SpringBootAuthenticationServiceApplication" />
       <item itemvalue="Spring Boot.SpringBootAuthenticationServiceApplication (1)" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.29 [localhost]" />
+      <item itemvalue="HTTP Request.participant-requests#3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.participant-requests#3" />
+        <item itemvalue="HTTP Request.participant-requests#2" />
         <item itemvalue="JUnit.ConversationControllerTest" />
       </list>
     </recent_temporary>
@@ -597,6 +694,8 @@
       <workItem from="1583848897770" duration="1949000" />
       <workItem from="1584094745766" duration="9600000" />
       <workItem from="1584347392388" duration="19557000" />
+      <workItem from="1584429577811" duration="3307000" />
+      <workItem from="1584438230889" duration="16924000" />
     </task>
     <servers />
   </component>

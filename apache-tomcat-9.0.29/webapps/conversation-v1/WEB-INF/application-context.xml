@@ -20,22 +20,48 @@
         <constructor-arg ref="participantService"/>
     </bean>
 
+    <bean id="reportController" class="srv.converse.controller.ReportController">
+        <constructor-arg ref="reportService"/>
+    </bean>
+
+    <bean id="archivedConversationController" class="srv.converse.controller.ArchivedConversationController">
+        <constructor-arg ref="archivedConversationService"/>
+    </bean>
+
 
     <bean id="conversationService" class="srv.converse.service.impl.ConversationServiceImpl">
         <constructor-arg ref="conversationDAO"/>
+        <constructor-arg ref="archivedConversationDAO"/>
     </bean>
 
     <bean id="participantService" class="srv.converse.service.impl.ParticipantServiceImpl">
         <constructor-arg ref="participantDAO"/>
     </bean>
 
-    <bean id="deletedConversationService" class="srv.converse.service.impl.DeletedConversationServiceImpl">
-        <constructor-arg ref="deletedConversationDAO"/>
+    <bean id="reportService" class="srv.converse.service.impl.ReportServiceImpl">
+        <constructor-arg ref="reportDAO" />
+    </bean>
+
+    <bean id="archivedConversationService" class="srv.converse.service.impl.ArchivedConversationServiceImpl">
+        <constructor-arg ref="archivedConversationDAO"/>
     </bean>
 
 
-    <bean id="conversationDAO" class="srv.converse.dao.impl.ConversationDAOImpl"/>
-    <bean id="participantDAO" class="srv.converse.dao.impl.ParticipantDAOImpl"/>
-    <bean id="deletedConversationDAO" class="srv.converse.dao.impl.DeletedConversationDAOImpl"/>
+    <bean id="conversationDAO" class="srv.converse.dao.impl.ConversationDAOImpl">
+        <constructor-arg ref="entityManagerFactory" />
+    </bean>
+
+    <bean id="participantDAO" class="srv.converse.dao.impl.ParticipantDAOImpl" />
+
+    <bean id="archivedConversationDAO" class="srv.converse.dao.impl.ArchivedConversationDAOImpl" />
+
+    <bean id="reportDAO" class="srv.converse.dao.impl.ReportDAOImpl">
+        <constructor-arg ref="entityManagerFactory" />
+    </bean>
+
+
+    <bean id="entityManagerFactory" class="javax.persistence.Persistence" factory-method="createEntityManagerFactory">
+        <constructor-arg value="conversationUnit" />
+    </bean>
 
 </beans>

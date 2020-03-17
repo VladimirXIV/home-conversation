@@ -1,4 +1,3 @@
-CREATE SCHEMA srv_converse;
-ALTER SCHEMA srv_converse OWNER TO srv_convers_role;
-COMMIT;
-
+create schema if not exists srv_converse;
+alter schema srv_converse owner to srv_convers_role;
+commit;

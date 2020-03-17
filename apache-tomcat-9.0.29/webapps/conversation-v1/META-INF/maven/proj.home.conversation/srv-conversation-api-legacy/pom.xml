@@ -27,9 +27,18 @@
 
         <org.hibernate-version>5.4.2.Final</org.hibernate-version>
         <org.springframework-version>5.2.1.RELEASE</org.springframework-version>
+        <junit-version>4.13</junit-version>
+        <liquibase.core-version>3.6.2</liquibase.core-version>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.1.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
 
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -47,6 +56,26 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>${org.springframework-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+            <version>${liquibase.core-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${org.springframework-version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit-version}</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
@@ -82,6 +111,18 @@
                     <username>tomcat</username>
                     <password>tomcat</password>
                     <path>/conversation-v1</path>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+                <version>${liquibase.core-version}</version>
+                <configuration>
+                    <url>${db.connection.url}</url>
+                    <username>${db.user}</username>
+                    <password>${db.password}</password>
+                    <changeLogFile>${project.basedir}\src\main\resources\liquibase\changelog\sql-changelog.xml</changeLogFile>
                 </configuration>
             </plugin>
 

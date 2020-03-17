@@ -1,0 +1,324 @@
+17-Mar-2020 16:28:41.548 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.29
+17-Mar-2020 16:28:41.578 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 16 2019 17:29:07 UTC
+17-Mar-2020 16:28:41.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.29.0
+17-Mar-2020 16:28:41.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+17-Mar-2020 16:28:41.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Mar-2020 16:28:41.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Mar-2020 16:28:41.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\Programs\Java\jre1.8.0_221
+17-Mar-2020 16:28:41.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_221-b11
+17-Mar-2020 16:28:41.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Mar-2020 16:28:41.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 16:28:41.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 16:28:41.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\MyProject\home-conversation\apache-tomcat-9.0.29\conf\logging.properties
+17-Mar-2020 16:28:41.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Mar-2020 16:28:41.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Mar-2020 16:28:41.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Mar-2020 16:28:41.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Mar-2020 16:28:41.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 16:28:41.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 16:28:41.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\MyProject\home-conversation\apache-tomcat-9.0.29\temp
+17-Mar-2020 16:28:41.698 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Programs\Java\jre1.8.0_221\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;D:\Programs\Python37-32\Scripts\;D:\Programs\Python37-32\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;D:\Programs\Java\jdk1.8.0_221\bin;D:\Programs\Java\jdk-11.0.4\bin;D:\Programs\OpenVPN\bin;D:\Programs\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\vladimir.fedotov\AppData\Local\Microsoft\WindowsApps;C:\Users\vladimir.fedotov\AppData\Local\atom\bin;.]
+17-Mar-2020 16:28:42.627 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 16:28:43.096 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 16:28:43.103 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1 779] milliseconds
+17-Mar-2020 16:28:43.155 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Mar-2020 16:28:43.156 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.29]
+17-Mar-2020 16:28:43.189 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war]
+17-Mar-2020 16:28:43.218 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1] was found with a last modified time that did not match the associated WAR. It will be deleted.
+17-Mar-2020 16:28:45.412 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Mar-2020 16:28:45.466 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+17-Mar-2020 16:28:46.021 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 554 ms
+17-Mar-2020 16:28:46.085 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcherServlet'
+17-Mar-2020 16:28:47.052 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 967 ms
+17-Mar-2020 16:28:47.071 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war] has finished in [3 882] ms
+17-Mar-2020 16:28:47.072 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\docs]
+17-Mar-2020 16:28:48.047 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\docs] has finished in [975] ms
+17-Mar-2020 16:28:48.048 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\examples]
+17-Mar-2020 16:28:49.517 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\examples] has finished in [1 469] ms
+17-Mar-2020 16:28:49.518 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\host-manager]
+17-Mar-2020 16:28:49.558 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\host-manager] has finished in [41] ms
+17-Mar-2020 16:28:49.559 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\manager]
+17-Mar-2020 16:28:49.610 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\manager] has finished in [51] ms
+17-Mar-2020 16:28:49.610 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\ROOT]
+17-Mar-2020 16:28:49.695 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\ROOT] has finished in [85] ms
+17-Mar-2020 16:28:49.700 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 16:28:49.709 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 16:28:49.712 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [6 606] milliseconds
+17-Mar-2020 16:33:20.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.29
+17-Mar-2020 16:33:20.287 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 16 2019 17:29:07 UTC
+17-Mar-2020 16:33:20.287 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.29.0
+17-Mar-2020 16:33:20.287 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+17-Mar-2020 16:33:20.287 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Mar-2020 16:33:20.287 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Mar-2020 16:33:20.287 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\Programs\Java\jre1.8.0_221
+17-Mar-2020 16:33:20.287 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_221-b11
+17-Mar-2020 16:33:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Mar-2020 16:33:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 16:33:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 16:33:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\MyProject\home-conversation\apache-tomcat-9.0.29\conf\logging.properties
+17-Mar-2020 16:33:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Mar-2020 16:33:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote=
+17-Mar-2020 16:33:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.port=2000
+17-Mar-2020 16:33:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.ssl=false
+17-Mar-2020 16:33:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.password.file=C:\Users\vladimir.fedotov\.IntelliJIdea2019.2\system\tomcat\Unnamed_conversation_2\jmxremote.password
+17-Mar-2020 16:33:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.access.file=C:\Users\vladimir.fedotov\.IntelliJIdea2019.2\system\tomcat\Unnamed_conversation_2\jmxremote.access
+17-Mar-2020 16:33:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.rmi.server.hostname=127.0.0.1
+17-Mar-2020 16:33:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Mar-2020 16:33:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Mar-2020 16:33:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Mar-2020 16:33:20.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 16:33:20.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 16:33:20.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\MyProject\home-conversation\apache-tomcat-9.0.29\temp
+17-Mar-2020 16:33:20.289 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Programs\Java\jre1.8.0_221\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;D:\Programs\Python37-32\Scripts\;D:\Programs\Python37-32\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;D:\Programs\Java\jdk1.8.0_221\bin;D:\Programs\Java\jdk-11.0.4\bin;D:\Programs\OpenVPN\bin;D:\Programs\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\vladimir.fedotov\AppData\Local\Microsoft\WindowsApps;C:\Users\vladimir.fedotov\AppData\Local\atom\bin;.]
+17-Mar-2020 16:33:20.534 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 16:33:20.561 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 16:33:20.565 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [440] milliseconds
+17-Mar-2020 16:33:20.598 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Mar-2020 16:33:20.599 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.29]
+17-Mar-2020 16:33:20.617 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war]
+17-Mar-2020 16:33:22.451 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Mar-2020 16:33:22.535 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+17-Mar-2020 16:33:23.082 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 547 ms
+17-Mar-2020 16:33:23.152 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcherServlet'
+17-Mar-2020 16:33:24.090 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 938 ms
+17-Mar-2020 16:33:24.108 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war] has finished in [3 491] ms
+17-Mar-2020 16:33:24.109 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\docs]
+17-Mar-2020 16:33:24.291 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\docs] has finished in [181] ms
+17-Mar-2020 16:33:24.291 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\examples]
+17-Mar-2020 16:33:25.004 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\examples] has finished in [713] ms
+17-Mar-2020 16:33:25.005 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\host-manager]
+17-Mar-2020 16:33:25.055 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\host-manager] has finished in [50] ms
+17-Mar-2020 16:33:25.056 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\manager]
+17-Mar-2020 16:33:25.089 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\manager] has finished in [32] ms
+17-Mar-2020 16:33:25.089 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\ROOT]
+17-Mar-2020 16:33:25.131 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\ROOT] has finished in [42] ms
+17-Mar-2020 16:33:25.136 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 16:33:25.150 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 16:33:25.154 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4 589] milliseconds
+17-Mar-2020 16:35:32.502 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/conversation-v1]
+17-Mar-2020 16:35:32.568 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war]
+17-Mar-2020 16:35:34.445 INFO [http-nio-8080-exec-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Mar-2020 16:35:34.864 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+17-Mar-2020 16:35:34.864 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardContext.startInternal Context [/conversation-v1] startup failed due to previous errors
+17-Mar-2020 16:35:34.901 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war] has finished in [2 333] ms
+17-Mar-2020 16:57:49.496 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/conversation-v1]
+17-Mar-2020 16:57:49.557 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war]
+17-Mar-2020 16:57:52.703 INFO [http-nio-8080-exec-11] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Mar-2020 16:57:53.136 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+17-Mar-2020 16:57:53.139 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardContext.startInternal Context [/conversation-v1] startup failed due to previous errors
+17-Mar-2020 16:57:53.226 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war] has finished in [3 621] ms
+17-Mar-2020 16:59:11.223 INFO [http-nio-8080-exec-21] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/conversation-v1]
+17-Mar-2020 16:59:11.250 INFO [http-nio-8080-exec-21] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war]
+17-Mar-2020 16:59:12.896 INFO [http-nio-8080-exec-21] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Mar-2020 16:59:13.307 SEVERE [http-nio-8080-exec-21] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+17-Mar-2020 16:59:13.308 SEVERE [http-nio-8080-exec-21] org.apache.catalina.core.StandardContext.startInternal Context [/conversation-v1] startup failed due to previous errors
+17-Mar-2020 16:59:13.344 INFO [http-nio-8080-exec-21] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war] has finished in [2 094] ms
+17-Mar-2020 16:59:31.123 INFO [http-nio-8080-exec-14] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/conversation-v1]
+17-Mar-2020 16:59:31.165 INFO [http-nio-8080-exec-14] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war]
+17-Mar-2020 16:59:33.388 INFO [http-nio-8080-exec-14] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Mar-2020 16:59:34.046 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+17-Mar-2020 16:59:34.049 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardContext.startInternal Context [/conversation-v1] startup failed due to previous errors
+17-Mar-2020 16:59:34.102 INFO [http-nio-8080-exec-14] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war] has finished in [2 937] ms
+17-Mar-2020 16:59:52.712 INFO [http-nio-8080-exec-18] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/conversation-v1]
+17-Mar-2020 16:59:52.742 INFO [http-nio-8080-exec-18] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war]
+17-Mar-2020 16:59:54.257 INFO [http-nio-8080-exec-18] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Mar-2020 16:59:54.668 SEVERE [http-nio-8080-exec-18] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+17-Mar-2020 16:59:54.670 SEVERE [http-nio-8080-exec-18] org.apache.catalina.core.StandardContext.startInternal Context [/conversation-v1] startup failed due to previous errors
+17-Mar-2020 16:59:54.708 INFO [http-nio-8080-exec-18] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war] has finished in [1 966] ms
+17-Mar-2020 17:00:41.516 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+17-Mar-2020 17:00:41.517 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 17:00:41.923 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 17:00:42.327 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Mar-2020 17:00:42.498 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 17:00:42.501 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 17:00:42.504 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 17:00:42.506 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 17:07:01.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.29
+17-Mar-2020 17:07:01.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 16 2019 17:29:07 UTC
+17-Mar-2020 17:07:01.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.29.0
+17-Mar-2020 17:07:01.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+17-Mar-2020 17:07:01.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Mar-2020 17:07:01.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Mar-2020 17:07:01.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\Programs\Java\jre1.8.0_221
+17-Mar-2020 17:07:01.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_221-b11
+17-Mar-2020 17:07:01.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Mar-2020 17:07:01.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 17:07:01.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 17:07:01.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\MyProject\home-conversation\apache-tomcat-9.0.29\conf\logging.properties
+17-Mar-2020 17:07:01.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Mar-2020 17:07:01.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote=
+17-Mar-2020 17:07:01.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.port=2000
+17-Mar-2020 17:07:01.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.ssl=false
+17-Mar-2020 17:07:01.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.password.file=C:\Users\vladimir.fedotov\.IntelliJIdea2019.2\system\tomcat\Unnamed_conversation_2\jmxremote.password
+17-Mar-2020 17:07:01.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.access.file=C:\Users\vladimir.fedotov\.IntelliJIdea2019.2\system\tomcat\Unnamed_conversation_2\jmxremote.access
+17-Mar-2020 17:07:01.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.rmi.server.hostname=127.0.0.1
+17-Mar-2020 17:07:01.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Mar-2020 17:07:01.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Mar-2020 17:07:01.870 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Mar-2020 17:07:01.870 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 17:07:01.870 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 17:07:01.870 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\MyProject\home-conversation\apache-tomcat-9.0.29\temp
+17-Mar-2020 17:07:01.870 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Programs\Java\jre1.8.0_221\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;D:\Programs\Python37-32\Scripts\;D:\Programs\Python37-32\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;D:\Programs\Java\jdk1.8.0_221\bin;D:\Programs\Java\jdk-11.0.4\bin;D:\Programs\OpenVPN\bin;D:\Programs\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\vladimir.fedotov\AppData\Local\Microsoft\WindowsApps;C:\Users\vladimir.fedotov\AppData\Local\atom\bin;.]
+17-Mar-2020 17:07:02.139 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 17:07:02.189 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 17:07:02.197 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [528] milliseconds
+17-Mar-2020 17:07:02.237 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Mar-2020 17:07:02.238 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.29]
+17-Mar-2020 17:07:02.261 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war]
+17-Mar-2020 17:07:04.820 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Mar-2020 17:07:05.552 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+17-Mar-2020 17:07:05.553 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/conversation-v1] startup failed due to previous errors
+17-Mar-2020 17:07:05.600 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war] has finished in [3 339] ms
+17-Mar-2020 17:07:05.601 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\docs]
+17-Mar-2020 17:07:05.841 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\docs] has finished in [240] ms
+17-Mar-2020 17:07:05.841 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\examples]
+17-Mar-2020 17:07:06.557 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\examples] has finished in [716] ms
+17-Mar-2020 17:07:06.558 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\host-manager]
+17-Mar-2020 17:07:06.613 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\host-manager] has finished in [55] ms
+17-Mar-2020 17:07:06.615 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\manager]
+17-Mar-2020 17:07:06.649 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\manager] has finished in [33] ms
+17-Mar-2020 17:07:06.649 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\ROOT]
+17-Mar-2020 17:07:06.686 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\ROOT] has finished in [37] ms
+17-Mar-2020 17:07:06.697 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 17:07:06.712 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 17:07:06.716 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4 519] milliseconds
+17-Mar-2020 17:12:45.193 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+17-Mar-2020 17:12:45.193 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 17:12:45.600 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 17:12:45.997 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Mar-2020 17:12:46.143 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 17:12:46.147 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 17:12:46.150 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 17:12:46.151 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 17:12:56.624 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.29
+17-Mar-2020 17:12:56.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 16 2019 17:29:07 UTC
+17-Mar-2020 17:12:56.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.29.0
+17-Mar-2020 17:12:56.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+17-Mar-2020 17:12:56.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Mar-2020 17:12:56.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\Programs\Java\jre1.8.0_221
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_221-b11
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\MyProject\home-conversation\apache-tomcat-9.0.29\conf\logging.properties
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote=
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.port=2000
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.ssl=false
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.password.file=C:\Users\vladimir.fedotov\.IntelliJIdea2019.2\system\tomcat\Unnamed_conversation_2\jmxremote.password
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.access.file=C:\Users\vladimir.fedotov\.IntelliJIdea2019.2\system\tomcat\Unnamed_conversation_2\jmxremote.access
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.rmi.server.hostname=127.0.0.1
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Mar-2020 17:12:56.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 17:12:56.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 17:12:56.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\MyProject\home-conversation\apache-tomcat-9.0.29\temp
+17-Mar-2020 17:12:56.627 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Programs\Java\jre1.8.0_221\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;D:\Programs\Python37-32\Scripts\;D:\Programs\Python37-32\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;D:\Programs\Java\jdk1.8.0_221\bin;D:\Programs\Java\jdk-11.0.4\bin;D:\Programs\OpenVPN\bin;D:\Programs\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\vladimir.fedotov\AppData\Local\Microsoft\WindowsApps;C:\Users\vladimir.fedotov\AppData\Local\atom\bin;.]
+17-Mar-2020 17:12:56.825 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 17:12:56.854 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 17:12:56.860 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [386] milliseconds
+17-Mar-2020 17:12:56.886 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Mar-2020 17:12:56.886 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.29]
+17-Mar-2020 17:12:56.902 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war]
+17-Mar-2020 17:12:59.164 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Mar-2020 17:12:59.919 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+17-Mar-2020 17:12:59.920 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/conversation-v1] startup failed due to previous errors
+17-Mar-2020 17:12:59.975 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war] has finished in [3 072] ms
+17-Mar-2020 17:12:59.975 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\docs]
+17-Mar-2020 17:13:00.134 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\docs] has finished in [158] ms
+17-Mar-2020 17:13:00.134 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\examples]
+17-Mar-2020 17:13:00.680 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\examples] has finished in [546] ms
+17-Mar-2020 17:13:00.680 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\host-manager]
+17-Mar-2020 17:13:00.720 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\host-manager] has finished in [40] ms
+17-Mar-2020 17:13:00.721 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\manager]
+17-Mar-2020 17:13:00.750 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\manager] has finished in [30] ms
+17-Mar-2020 17:13:00.751 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\ROOT]
+17-Mar-2020 17:13:00.785 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\ROOT] has finished in [33] ms
+17-Mar-2020 17:13:00.788 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 17:13:00.799 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 17:13:00.802 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3 941] milliseconds
+17-Mar-2020 17:52:33.287 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+17-Mar-2020 17:52:33.290 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 17:52:33.692 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 17:52:34.091 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Mar-2020 17:52:34.283 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 17:52:34.287 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 17:52:34.291 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 17:52:34.293 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 18:14:11.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.29
+17-Mar-2020 18:14:11.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 16 2019 17:29:07 UTC
+17-Mar-2020 18:14:11.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.29.0
+17-Mar-2020 18:14:11.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+17-Mar-2020 18:14:11.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Mar-2020 18:14:11.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Mar-2020 18:14:11.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\Programs\Java\jre1.8.0_221
+17-Mar-2020 18:14:11.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_221-b11
+17-Mar-2020 18:14:11.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Mar-2020 18:14:11.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 18:14:11.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 18:14:11.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\MyProject\home-conversation\apache-tomcat-9.0.29\conf\logging.properties
+17-Mar-2020 18:14:11.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Mar-2020 18:14:11.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote=
+17-Mar-2020 18:14:11.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.port=2000
+17-Mar-2020 18:14:11.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.ssl=false
+17-Mar-2020 18:14:11.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.password.file=C:\Users\vladimir.fedotov\.IntelliJIdea2019.2\system\tomcat\Unnamed_conversation_2\jmxremote.password
+17-Mar-2020 18:14:11.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.access.file=C:\Users\vladimir.fedotov\.IntelliJIdea2019.2\system\tomcat\Unnamed_conversation_2\jmxremote.access
+17-Mar-2020 18:14:11.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.rmi.server.hostname=127.0.0.1
+17-Mar-2020 18:14:11.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Mar-2020 18:14:11.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Mar-2020 18:14:11.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Mar-2020 18:14:11.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 18:14:11.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\MyProject\home-conversation\apache-tomcat-9.0.29
+17-Mar-2020 18:14:11.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\MyProject\home-conversation\apache-tomcat-9.0.29\temp
+17-Mar-2020 18:14:11.909 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Programs\Java\jre1.8.0_221\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;D:\Programs\Python37-32\Scripts\;D:\Programs\Python37-32\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;D:\Programs\Java\jdk1.8.0_221\bin;D:\Programs\Java\jdk-11.0.4\bin;D:\Programs\OpenVPN\bin;D:\Programs\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\vladimir.fedotov\AppData\Local\Microsoft\WindowsApps;C:\Users\vladimir.fedotov\AppData\Local\atom\bin;.]
+17-Mar-2020 18:14:12.145 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 18:14:12.175 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 18:14:12.179 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [463] milliseconds
+17-Mar-2020 18:14:12.214 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Mar-2020 18:14:12.214 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.29]
+17-Mar-2020 18:14:12.233 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war]
+17-Mar-2020 18:14:14.583 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Mar-2020 18:14:15.331 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+17-Mar-2020 18:14:15.332 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/conversation-v1] startup failed due to previous errors
+17-Mar-2020 18:14:15.376 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war] has finished in [3 143] ms
+17-Mar-2020 18:14:15.377 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\docs]
+17-Mar-2020 18:14:15.598 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\docs] has finished in [220] ms
+17-Mar-2020 18:14:15.598 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\examples]
+17-Mar-2020 18:14:16.344 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\examples] has finished in [746] ms
+17-Mar-2020 18:14:16.345 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\host-manager]
+17-Mar-2020 18:14:16.393 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\host-manager] has finished in [47] ms
+17-Mar-2020 18:14:16.393 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\manager]
+17-Mar-2020 18:14:16.428 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\manager] has finished in [35] ms
+17-Mar-2020 18:14:16.428 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Установка веб приложения в папку [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\ROOT]
+17-Mar-2020 18:14:16.478 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\ROOT] has finished in [50] ms
+17-Mar-2020 18:14:16.483 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 18:14:16.499 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 18:14:16.503 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4 323] milliseconds
+17-Mar-2020 18:14:38.405 INFO [http-nio-8080-exec-7] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/conversation-v1]
+17-Mar-2020 18:14:38.443 INFO [http-nio-8080-exec-7] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war]
+17-Mar-2020 18:14:40.657 INFO [http-nio-8080-exec-7] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Mar-2020 18:14:41.298 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+17-Mar-2020 18:14:41.300 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardContext.startInternal Context [/conversation-v1] startup failed due to previous errors
+17-Mar-2020 18:14:41.345 INFO [http-nio-8080-exec-7] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war] has finished in [2 901] ms
+17-Mar-2020 18:20:18.660 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/conversation-v1]
+17-Mar-2020 18:20:18.699 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war]
+17-Mar-2020 18:20:20.477 INFO [http-nio-8080-exec-11] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Mar-2020 18:20:20.937 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+17-Mar-2020 18:20:20.939 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardContext.startInternal Context [/conversation-v1] startup failed due to previous errors
+17-Mar-2020 18:20:20.983 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war] has finished in [2 284] ms
+17-Mar-2020 18:23:26.932 INFO [http-nio-8080-exec-17] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/conversation-v1]
+17-Mar-2020 18:23:26.980 INFO [http-nio-8080-exec-17] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war]
+17-Mar-2020 18:23:29.219 INFO [http-nio-8080-exec-17] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Mar-2020 18:23:29.754 SEVERE [http-nio-8080-exec-17] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+17-Mar-2020 18:23:29.756 SEVERE [http-nio-8080-exec-17] org.apache.catalina.core.StandardContext.startInternal Context [/conversation-v1] startup failed due to previous errors
+17-Mar-2020 18:23:29.800 INFO [http-nio-8080-exec-17] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\MyProject\home-conversation\apache-tomcat-9.0.29\webapps\conversation-v1.war] has finished in [2 821] ms
+17-Mar-2020 18:24:51.605 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+17-Mar-2020 18:24:51.606 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 18:24:52.003 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 18:24:52.418 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Mar-2020 18:24:52.591 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 18:24:52.592 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+17-Mar-2020 18:24:52.594 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+17-Mar-2020 18:24:52.595 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

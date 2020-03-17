@@ -11,10 +11,6 @@
             <generator class="increment"/>
         </id>
 
-        <property name="updatedAt" type="java.util.Date">
-            <column name="updated_at" not-null="true"/>
-        </property>
-
         <property name="createdAt" type="java.util.Date">
             <column name="created_at" not-null="true"/>
         </property>
@@ -30,22 +26,78 @@
                 <column name="creator_id" not-null="true"/>
             </property>
 
+            <property name="updatedAt" type="java.util.Date">
+                <column name="updated_at" not-null="true"/>
+            </property>
+
+            <set name="participants" inverse="true" cascade="all-delete-orphan">
+                <key column="conversation_id" not-null="true" />
+                <one-to-many class="Participant"/>
+            </set>
+
+            <set name="archivedConversations" inverse="true" cascade="all-delete-orphan">
+                <key column="conversation_id" not-null="true" />
+                <one-to-many class="ArchivedConversation" />
+            </set>
+
         </union-subclass>
 
-
-        <union-subclass name="DeletedConversation" abstract="false" table="deleted_conversation" schema = "srv_converse">
-
-            <property name="conversationId" type="java.lang.Long">
-                <column length="2048" name="title" not-null="true"/>
-            </property>
+        <union-subclass name="ArchivedConversation" abstract="false" table="archived_conversation" schema = "srv_converse">
 
             <property name="participantId" type="java.lang.Long">
                 <column name="creator_id" not-null="true"/>
             </property>
 
-            <property name="createdAt" type="java.util.Date">
+            <many-to-one name="conversation" class="Conversation" column="conversation_id" not-null="true" />
+
+        </union-subclass>
+
+        <union-subclass name="Participant" abstract="false" table="participant" schema = "srv_converse">
+
+            <property name="userId" type="java.lang.Long">
+                <column name="creator_id" not-null="true"/>
+            </property>
+
+            <property name="roleId" type="java.util.Date">
                 <column name="created_at" not-null="true"/>
             </property>
+
+            <property name="updatedAt" type="java.util.Date">
+                <column name="updated_at" not-null="true"/>
+            </property>
+
+            <many-to-one name="conversation" class="Conversation" column="conversation_id" not-null="true" />
+            
+            <set name="reports" cascade="create, merge, delete">
+                <key column="participant_id" not-null="true" />
+                <one-to-many class="Report" />
+            </set>
+
+        </union-subclass>
+
+        <union-subclass name="Report" abstract="false" table="archived_conversation" schema = "srv_converse">
+
+            <property name="note" type="java.lang.String">
+                <column length="2048" name="title" not-null="true"/>
+            </property>
+
+            <property name="reportType" type="java.lang.String">
+                <column length="2048" name="title" not-null="true"/>
+            </property>
+
+            <property name="note" type="java.lang.String">
+                <column length="2048" name="title" not-null="true"/>
+            </property>
+
+            <property name="userId" type="java.lang.Long">
+                <column name="creator_id" not-null="true"/>
+            </property>
+
+            <property name="updatedAt" type="java.util.Date">
+                <column name="updated_at" not-null="true"/>
+            </property>
+
+            <many-to-one name="participant" class="Participant" column="participant_id" not-null="true" />
 
         </union-subclass>
 

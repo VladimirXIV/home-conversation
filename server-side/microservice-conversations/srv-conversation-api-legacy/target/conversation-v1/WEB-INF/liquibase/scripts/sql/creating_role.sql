@@ -1,2 +1,2 @@
-CREATE ROLE srv_convers_role WITH password 'srv_convers_role' LOGIN;
-COMMIT;
+create role srv_convers_role with password 'srv_convers_role' login;
+commit;
